@@ -14,32 +14,28 @@ def build_presentation():
     # Slide 1: 封面
     slides.append('''
       <!-- SLIDE 1: 封面 -->
-      <section class="slide cover-slide active" data-slide="1" data-section="第一部分｜開場">
-        <div class="cover-top-tag">
+      <section class="slide cover-slide" data-slide="1" data-section="第一頁封面" style="padding: 70px 100px; justify-content: center;">
+        <div class="cover-top-tag" style="margin-bottom: 28px; font-size: 20px; padding: 10px 24px;">
           <span class="pulse-dot"></span>
           <span>加護病房臨床藥物安全核心課程 • 60分鐘完整版</span>
         </div>
-        <h1 class="cover-title">加護病房常用藥物與<br><span style="color: var(--accent-cyan);">高風險不良反應</span></h1>
-        <p class="cover-subtitle">從給藥到床邊監測：護理人員需要辨識的藥物警訊與緊急處置SOP</p>
+        <h1 class="cover-title" style="font-size: 64px; line-height: 1.25; margin-bottom: 24px;">加護病房常用藥物與<br><span style="color: #0284c7;">高風險不良反應</span></h1>
+        <p class="cover-subtitle" style="font-size: 29px; line-height: 1.5; margin-bottom: 44px; padding-left: 24px; max-width: 1200px; border-left: 6px solid #0284c7;">從給藥到床邊監測：護理人員需要辨識的藥物警訊與緊急處置SOP</p>
         
-        <div class="cover-meta">
+        <div class="cover-meta" style="padding-top: 32px; margin-bottom: 36px; gap: 50px; font-size: 26px; border-top: 2px solid #e2e8f0;">
           <div class="cover-meta-item">
-            <span style="color: var(--accent-blue);">主講人：</span>
+            <span style="color: #0284c7;">主講人：</span>
             <strong>李芸瑄 藥師</strong>
           </div>
           <div class="cover-meta-item">
-            <span style="color: var(--accent-blue);">課程日期：</span>
+            <span style="color: #0284c7;">課程日期：</span>
             <span>2026.09.09</span>
-          </div>
-          <div class="cover-meta-item">
-            <span style="color: var(--accent-blue);">課程規格：</span>
-            <span>共43頁／60分鐘完整培訓</span>
           </div>
         </div>
 
-        <div style="margin-top: 30px; padding: 12px 18px; background: rgba(0, 210, 211, 0.08); border: 1px solid rgba(0, 210, 211, 0.25); border-radius: 10px; display: inline-flex; align-items: center; gap: 12px; width: fit-content;">
-          <span style="color: var(--accent-cyan); font-weight: bold; font-size: 18.5px;">課程核心主軸：</span>
-          <span style="color: #ffffff; font-weight: 600; font-size: 18.5px;">為什麼給？ 給完看什麼？ 什麼情況要立即回報？</span>
+        <div style="padding: 16px 26px; background: #f0f9ff; border: 2px solid #bae6fd; border-radius: 12px; display: inline-flex; align-items: center; gap: 14px; width: fit-content;">
+          <span style="color: #0284c7; font-weight: 800; font-size: 22px;">🎯 課程核心主軸：</span>
+          <span style="color: #0f172a; font-weight: 700; font-size: 22px;">為什麼給？ 給完看什麼？ 什麼情況要立即回報？</span>
         </div>
       </section>
     ''')
@@ -120,74 +116,82 @@ def build_presentation():
           <p class="slide-subtitle">重症病人病況瞬息萬變，護理人員往往是全醫療團隊中「最早發現藥物不良反應的人」</p>
         </div>
 
-        <div class="slide-body">
-          <div style="background: rgba(255, 255, 255, 0.04); border-radius: 10px; padding: 12px 18px; border: 1px solid rgba(255, 255, 255, 0.08);">
-            <div style="font-size: 12px; color: var(--accent-cyan); font-weight: 700; margin-bottom: 6px; text-transform: uppercase;">五階段藥物安全閉環流程</div>
-            <div class="step-chain">
-              <div class="step-item">
-                <div class="step-num">Step 1</div>
-                <div class="step-title">精準給藥</div>
+        <div class="slide-body" style="justify-content: flex-start; gap: 20px;">
+          <div style="background: #ffffff; border: 2px solid #cbd5e1; border-radius: 12px; padding: 16px 22px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);">
+            <div style="font-size: 20px; color: #0f766e; font-weight: 800; margin-bottom: 12px; text-transform: uppercase; display: flex; align-items: center; gap: 8px;">
+              <span>五階段藥物安全閉環流程</span>
+              <span style="font-size: 15px; font-weight: 600; color: #64748b; text-transform: none;">（臨床護理關鍵查核點）</span>
+            </div>
+            <div class="step-chain" style="gap: 12px;">
+              <div class="step-item" style="padding: 14px 12px; border-color: #38bdf8;">
+                <div class="step-num" style="color: #0284c7; font-size: 15.5px; margin-bottom: 3px;">Step 1</div>
+                <div class="step-title" style="font-size: 20.5px; margin-bottom: 3px;">精準給藥</div>
+                <div style="font-size: 15px; color: #64748b; font-weight: 600;">三讀五對・稀釋劑量</div>
               </div>
-              <span class="step-arrow">→</span>
-              <div class="step-item">
-                <div class="step-num">Step 2</div>
-                <div class="step-title">主動動態監測</div>
+              <span class="step-arrow" style="font-size: 24px;">→</span>
+              <div class="step-item" style="padding: 14px 12px; border-color: #38bdf8;">
+                <div class="step-num" style="color: #0284c7; font-size: 15.5px; margin-bottom: 3px;">Step 2</div>
+                <div class="step-title" style="font-size: 20.5px; margin-bottom: 3px;">主動動態監測</div>
+                <div style="font-size: 15px; color: #64748b; font-weight: 600;">生命徵象・心電波形</div>
               </div>
-              <span class="step-arrow">→</span>
-              <div class="step-item" style="border-color: rgba(245, 158, 11, 0.4);">
-                <div class="step-num" style="color: var(--accent-amber);">Step 3</div>
-                <div class="step-title">及早察覺變化</div>
+              <span class="step-arrow" style="font-size: 24px;">→</span>
+              <div class="step-item" style="padding: 14px 12px; border-color: #fbbf24;">
+                <div class="step-num" style="color: #d97706; font-size: 15.5px; margin-bottom: 3px;">Step 3</div>
+                <div class="step-title" style="font-size: 20.5px; margin-bottom: 3px;">及早察覺變化</div>
+                <div style="font-size: 15px; color: #64748b; font-weight: 600;">辨識床邊 8 大警訊</div>
               </div>
-              <span class="step-arrow">→</span>
-              <div class="step-item" style="border-color: rgba(255, 71, 87, 0.4);">
-                <div class="step-num" style="color: var(--accent-red);">Step 4</div>
-                <div class="step-title">回推可能藥物</div>
+              <span class="step-arrow" style="font-size: 24px;">→</span>
+              <div class="step-item" style="padding: 14px 12px; border-color: #f87171;">
+                <div class="step-num" style="color: #dc2626; font-size: 15.5px; margin-bottom: 3px;">Step 4</div>
+                <div class="step-title" style="font-size: 20.5px; margin-bottom: 3px;">回推可能藥物</div>
+                <div style="font-size: 15px; color: #64748b; font-weight: 600;">比對時間軸・相互作用</div>
               </div>
-              <span class="step-arrow">→</span>
-              <div class="step-item" style="border-color: rgba(0, 210, 211, 0.4);">
-                <div class="step-num" style="color: var(--accent-cyan);">Step 5</div>
-                <div class="step-title">即時回報處置</div>
+              <span class="step-arrow" style="font-size: 24px;">→</span>
+              <div class="step-item" style="padding: 14px 12px; border-color: #2dd4bf;">
+                <div class="step-num" style="color: #0f766e; font-size: 15.5px; margin-bottom: 3px;">Step 5</div>
+                <div class="step-title" style="font-size: 20.5px; margin-bottom: 3px;">即時回報處置</div>
+                <div style="font-size: 15px; color: #64748b; font-weight: 600;">SBAR 通報・停藥急救</div>
               </div>
             </div>
           </div>
 
-          <div class="card" style="margin-top: 2px;">
-            <div class="card-title">
-              <span style="color: var(--accent-amber);">床邊 8 大常見潛在藥物警訊（Red Flag Signs）</span>
-              <span class="sub-tag" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-amber);">必須提高警覺</span>
+          <div class="card" style="padding: 18px 24px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 4px;">
+            <div class="card-title" style="font-size: 25px; margin-bottom: 10px; padding-bottom: 8px;">
+              <span style="color: #d97706; font-weight: 800;">床邊 8 大常見潛在藥物警訊（Red Flag Signs）</span>
+              <span class="sub-tag" style="background: #fef3c7; border: 1px solid #fde68a; color: #d97706; font-size: 15px; padding: 4px 12px;">必須提高警覺</span>
             </div>
-            <div class="card-grid grid-4" style="margin-top: 4px;">
-              <div style="background: rgba(255, 255, 255, 0.03); padding: 9px; border-radius: 6px; border-left: 3px solid var(--accent-red);">
-                <strong style="color: #fff; font-size: 13px;">1. 血壓突然劇降</strong>
-                <p style="color: var(--text-muted); font-size: 11.5px; margin-top: 2px;">降壓過快/過敏/鎮靜低血壓</p>
+            <div class="card-grid grid-4" style="gap: 12px 14px; flex: 1;">
+              <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; padding: 12px 14px; border-radius: 8px; border-left: 5px solid var(--accent-red); display: flex; flex-direction: column; justify-content: center;">
+                <strong style="color: #0f172a; font-size: 20px; line-height: 1.3;">1. 血壓突然劇降</strong>
+                <p style="color: #475569; font-size: 18px; margin-top: 4px; line-height: 1.4;">降壓過快 / 過敏 / 鎮靜低血壓</p>
               </div>
-              <div style="background: rgba(255, 255, 255, 0.03); padding: 9px; border-radius: 6px; border-left: 3px solid var(--accent-red);">
-                <strong style="color: #fff; font-size: 13px;">2. 心率過快或過慢</strong>
-                <p style="color: var(--text-muted); font-size: 11.5px; margin-top: 2px;">β-blocker/Dex/強心劑過速</p>
+              <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; padding: 12px 14px; border-radius: 8px; border-left: 5px solid var(--accent-red); display: flex; flex-direction: column; justify-content: center;">
+                <strong style="color: #0f172a; font-size: 20px; line-height: 1.3;">2. 心率過快或過慢</strong>
+                <p style="color: #475569; font-size: 18px; margin-top: 4px; line-height: 1.4;">β-blocker / Dex / 強心劑過速</p>
               </div>
-              <div style="background: rgba(255, 255, 255, 0.03); padding: 9px; border-radius: 6px; border-left: 3px solid var(--accent-amber);">
-                <strong style="color: #fff; font-size: 13px;">3. 尿量持續下降</strong>
-                <p style="color: var(--text-muted); font-size: 11.5px; margin-top: 2px;">腎毒性/周邊血管過度收縮</p>
+              <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; padding: 12px 14px; border-radius: 8px; border-left: 5px solid var(--accent-amber); display: flex; flex-direction: column; justify-content: center;">
+                <strong style="color: #0f172a; font-size: 20px; line-height: 1.3;">3. 尿量持續下降</strong>
+                <p style="color: #475569; font-size: 18px; margin-top: 4px; line-height: 1.4;">腎毒性 / 周邊血管過度收縮</p>
               </div>
-              <div style="background: rgba(255, 255, 255, 0.03); padding: 9px; border-radius: 6px; border-left: 3px solid var(--accent-amber);">
-                <strong style="color: #fff; font-size: 13px;">4. 意識或呼吸抑制</strong>
-                <p style="color: var(--text-muted); font-size: 11.5px; margin-top: 2px;">鎮靜蓄積/鴉片類過量中毒</p>
+              <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; padding: 12px 14px; border-radius: 8px; border-left: 5px solid var(--accent-amber); display: flex; flex-direction: column; justify-content: center;">
+                <strong style="color: #0f172a; font-size: 20px; line-height: 1.3;">4. 意識或呼吸抑制</strong>
+                <p style="color: #475569; font-size: 18px; margin-top: 4px; line-height: 1.4;">鎮靜蓄積 / 鴉片類過量中毒</p>
               </div>
-              <div style="background: rgba(255, 255, 255, 0.03); padding: 9px; border-radius: 6px; border-left: 3px solid var(--accent-red);">
-                <strong style="color: #fff; font-size: 13px;">5. QTc 間期延長</strong>
-                <p style="color: var(--text-muted); font-size: 11.5px; margin-top: 2px;">>500ms 誘發致死性 TdP</p>
+              <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; padding: 12px 14px; border-radius: 8px; border-left: 5px solid var(--accent-red); display: flex; flex-direction: column; justify-content: center;">
+                <strong style="color: #0f172a; font-size: 20px; line-height: 1.3;">5. QTc 間期延長</strong>
+                <p style="color: #475569; font-size: 18px; margin-top: 4px; line-height: 1.4;">&gt;500ms 誘發致死性 TdP</p>
               </div>
-              <div style="background: rgba(255, 255, 255, 0.03); padding: 9px; border-radius: 6px; border-left: 3px solid var(--accent-red);">
-                <strong style="color: #fff; font-size: 13px;">6. 血小板急速驟降</strong>
-                <p style="color: var(--text-muted); font-size: 11.5px; margin-top: 2px;">50%跌幅需高度懷疑 HIT</p>
+              <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; padding: 12px 14px; border-radius: 8px; border-left: 5px solid var(--accent-red); display: flex; flex-direction: column; justify-content: center;">
+                <strong style="color: #0f172a; font-size: 20px; line-height: 1.3;">6. 血小板急速驟降</strong>
+                <p style="color: #475569; font-size: 18px; margin-top: 4px; line-height: 1.4;">50% 跌幅需高度懷疑 HIT</p>
               </div>
-              <div style="background: rgba(255, 255, 255, 0.03); padding: 9px; border-radius: 6px; border-left: 3px solid var(--accent-amber);">
-                <strong style="color: #fff; font-size: 13px;">7. 不明原因出血</strong>
-                <p style="color: var(--text-muted); font-size: 11.5px; margin-top: 2px;">穿刺處滲血/黑便/血尿</p>
+              <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; padding: 12px 14px; border-radius: 8px; border-left: 5px solid var(--accent-amber); display: flex; flex-direction: column; justify-content: center;">
+                <strong style="color: #0f172a; font-size: 20px; line-height: 1.3;">7. 不明原因出血</strong>
+                <p style="color: #475569; font-size: 18px; margin-top: 4px; line-height: 1.4;">穿刺處滲血 / 黑便 / 血尿</p>
               </div>
-              <div style="background: rgba(255, 255, 255, 0.03); padding: 9px; border-radius: 6px; border-left: 3px solid var(--accent-cyan);">
-                <strong style="color: #fff; font-size: 13px;">8. 新發紅疹或黏膜</strong>
-                <p style="color: var(--text-muted); font-size: 11.5px; margin-top: 2px;">DRESS/SJS 早期關鍵病灶</p>
+              <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; padding: 12px 14px; border-radius: 8px; border-left: 5px solid var(--accent-cyan); display: flex; flex-direction: column; justify-content: center;">
+                <strong style="color: #0f172a; font-size: 20px; line-height: 1.3;">8. 新發紅疹或黏膜</strong>
+                <p style="color: #475569; font-size: 18px; margin-top: 4px; line-height: 1.4;">DRESS / SJS 早期關鍵病灶</p>
               </div>
             </div>
           </div>
@@ -461,23 +465,13 @@ def build_presentation():
                 <span style="color: var(--accent-red);">疑似外滲時 5 步驟緊急處置 SOP</span>
                 <span class="sub-tag" style="background: rgba(255, 71, 87, 0.2); color: #fff;">立即執行</span>
               </div>
-              <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 4px;">
-                <div style="background: rgba(255, 71, 87, 0.12); padding: 7px 10px; border-radius: 6px; font-size: 13px;">
-                  <strong style="color: var(--accent-red);">1. 立即停止輸注：</strong>切斷升壓劑來源，防止藥液繼續進入皮下。
-                </div>
-                <div style="background: rgba(255, 255, 255, 0.04); padding: 7px 10px; border-radius: 6px; font-size: 13px;">
-                  <strong style="color: var(--accent-amber);">2. 暫時保留原管路：</strong>切勿馬上拔除靜脈導管！
-                </div>
-                <div style="background: rgba(255, 255, 255, 0.04); padding: 7px 10px; border-radius: 6px; font-size: 13px;">
-                  <strong style="color: var(--accent-cyan);">3. 評估抽吸殘留藥物：</strong>接空針盡量抽吸殘留於管路及皮下藥液。
-                </div>
-                <div style="background: rgba(255, 255, 255, 0.04); padding: 7px 10px; border-radius: 6px; font-size: 13px;">
-                  <strong style="color: var(--accent-blue);">4. 抬高患肢，局部熱敷：</strong>促進血管擴張以擴散藥物（不可冰敷）。
-                </div>
-                <div style="background: rgba(255, 71, 87, 0.15); padding: 7px 10px; border-radius: 6px; font-size: 13px;">
-                  <strong style="color: var(--accent-red);">5. 通知醫師：</strong>評估局部皮下解毒劑 Phentolamine 注射。
-                </div>
-              </div>
+              <ol style="list-style: none; display: flex; flex-direction: column; justify-content: space-evenly; flex: 1; gap: 16px; font-size: 14.5px; line-height: 1.65; padding: 8px 4px;">
+                <li><strong style="color: var(--accent-red);">1. 立即停止輸注：</strong>切斷升壓劑來源，防止藥液繼續進入皮下。</li>
+                <li><strong style="color: var(--accent-amber);">2. 暫時保留原管路：</strong>切勿馬上拔除靜脈導管！</li>
+                <li><strong style="color: var(--accent-cyan);">3. 評估抽吸殘留藥物：</strong>接空針盡量抽吸殘留於管路及皮下藥液。</li>
+                <li><strong style="color: var(--accent-blue);">4. 抬高患肢，局部熱敷：</strong>促進血管擴張以擴散藥物（不可冰敷）。</li>
+                <li><strong style="color: var(--accent-red);">5. 通知醫師：</strong>評估局部皮下解毒劑 Phentolamine 注射。</li>
+              </ol>
             </div>
           </div>
         </div>
@@ -501,55 +495,72 @@ def build_presentation():
           <p class="slide-subtitle">針對低心輸出與心因性休克，依半衰期、腎功能排泄與受體阻斷特性精確抉擇</p>
         </div>
 
-        <div class="slide-body">
+        <div class="slide-body" style="justify-content: flex-start; gap: 20px;">
           <div class="table-container">
             <table class="med-table">
               <thead>
                 <tr>
-                  <th style="width: 14%;">比較項目</th>
-                  <th style="width: 43%;">Dobutamine</th>
-                  <th style="width: 43%;">Milrinone</th>
+                  <th style="width: 14%; padding: 16px 20px; font-size: 21px;">比較項目</th>
+                  <th style="width: 43%; padding: 16px 20px; font-size: 21px;">
+                    Dobutamine <span style="font-size: 16px; font-weight: 600; color: #0284c7; margin-left: 6px;">(β1 促效劑)</span>
+                  </th>
+                  <th style="width: 43%; padding: 16px 20px; font-size: 21px;">
+                    Milrinone <span style="font-size: 16px; font-weight: 600; color: #0f766e; margin-left: 6px;">(PDE-3 抑制劑)</span>
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>作用機轉</strong></td>
-                  <td>β1 受體作用為主（微弱 β2 及 α1）</td>
-                  <td>PDE-3 磷酸二酯酶抑制劑（增加細胞內 cAMP）</td>
+                  <td style="padding: 16px 20px; font-size: 20px;"><strong>作用機轉</strong></td>
+                  <td style="padding: 16px 20px; font-size: 20px;">β1 受體作用為主（微弱 β2 及 α1）</td>
+                  <td style="padding: 16px 20px; font-size: 20px;">PDE-3 磷酸二酯酶抑制劑（增加細胞內 cAMP）</td>
                 </tr>
                 <tr>
-                  <td><strong>主要效果</strong></td>
-                  <td>增加心肌收縮力與心輸出量</td>
-                  <td>增加心肌收縮力並擴張全身與肺血管（Inodilator）</td>
+                  <td style="padding: 16px 20px; font-size: 20px;"><strong>主要效果</strong></td>
+                  <td style="padding: 16px 20px; font-size: 20px;">增加心肌收縮力與心輸出量</td>
+                  <td style="padding: 16px 20px; font-size: 20px;">增加心肌收縮力並擴張全身與肺血管（Inodilator）</td>
                 </tr>
                 <tr>
-                  <td><strong>主要風險</strong></td>
-                  <td>心搏過速、心律不整、血壓下降</td>
-                  <td><strong>血壓顯著下降</strong>、心律不整</td>
+                  <td style="padding: 16px 20px; font-size: 20px;"><strong>主要風險</strong></td>
+                  <td style="padding: 16px 20px; font-size: 20px;">心搏過速、心律不整、血壓下降</td>
+                  <td style="padding: 16px 20px; font-size: 20px;"><strong>血壓顯著下降</strong>、心律不整</td>
                 </tr>
                 <tr>
-                  <td><strong>腎功能影響</strong></td>
-                  <td>非主要腎排除（腎功能不全影響較小）</td>
-                  <td><strong>腎功能不全可能顯著蓄積中毒</strong>（需依 eGFR 調劑）</td>
+                  <td style="padding: 16px 20px; font-size: 20px;"><strong>腎功能影響</strong></td>
+                  <td style="padding: 16px 20px; font-size: 20px;">非主要腎排除（腎功能不全影響較小）</td>
+                  <td style="padding: 16px 20px; font-size: 20px;"><strong>腎功能不全可能顯著蓄積中毒</strong>（需依 eGFR 調劑）</td>
                 </tr>
                 <tr>
-                  <td><strong>臨床特色</strong></td>
-                  <td>起效快、半衰期短（約2分），較容易調整；<strong>若病人使用 β-blocker 可能減弱反應</strong></td>
-                  <td>半衰期較長（2-3小時），調整後效果消退較慢；<strong>不受 β-blocker 拮抗影響</strong></td>
+                  <td style="padding: 16px 20px; font-size: 20px;"><strong>臨床特色</strong></td>
+                  <td style="padding: 16px 20px; font-size: 20px;">起效快、半衰期短（約2分），較容易調整；<strong>若病人使用 β-blocker 可能減弱反應</strong></td>
+                  <td style="padding: 16px 20px; font-size: 20px;">半衰期較長（2-3小時），調整後效果消退較慢；<strong>不受 β-blocker 拮抗影響</strong></td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div class="card highlight-amber" style="padding: 10px 16px;">
-            <div style="font-size: 13px; font-weight: 700; color: var(--accent-amber); margin-bottom: 3px;">
-              強心劑使用前 4 項臨床確認清單：
+          <div class="card highlight-amber" style="padding: 18px 22px; border-radius: 12px; margin-bottom: 4px;">
+            <div style="font-size: 21px; font-weight: 800; color: #b45309; margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+              <span>強心劑使用前 4 項臨床確認清單</span>
+              <span class="sub-tag" style="background: #fef3c7; border: 1px solid #fde68a; color: #b45309; font-size: 14.5px; padding: 3px 10px;">床邊關鍵查核</span>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; font-size: 12.5px;">
-              <div>① <strong>血容量是否適當？</strong>（空抽會加重低血壓）</div>
-              <div>② <strong>血壓是否足以耐受？</strong>（血管擴張易掉血壓）</div>
-              <div>③ <strong>是否有持續低心輸出或低灌流？</strong></div>
-              <div>④ <strong>心率、心律及腎功能指數為何？</strong></div>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;">
+              <div style="background: #ffffff; border: 1.5px solid #fde68a; border-radius: 8px; padding: 12px 14px; border-left: 4px solid #f59e0b;">
+                <strong style="color: #0f172a; font-size: 19.5px; display: block; margin-bottom: 3px;">① 血容量是否適當？</strong>
+                <span style="color: #64748b; font-size: 17.5px; line-height: 1.4; display: block;">空抽會嚴重加重低血壓</span>
+              </div>
+              <div style="background: #ffffff; border: 1.5px solid #fde68a; border-radius: 8px; padding: 12px 14px; border-left: 4px solid #f59e0b;">
+                <strong style="color: #0f172a; font-size: 19.5px; display: block; margin-bottom: 3px;">② 血壓是否能耐受？</strong>
+                <span style="color: #64748b; font-size: 17.5px; line-height: 1.4; display: block;">血管擴張易使血壓驟降</span>
+              </div>
+              <div style="background: #ffffff; border: 1.5px solid #fde68a; border-radius: 8px; padding: 12px 14px; border-left: 4px solid #f59e0b;">
+                <strong style="color: #0f172a; font-size: 19.5px; display: block; margin-bottom: 3px;">③ 是否持續低輸出？</strong>
+                <span style="color: #64748b; font-size: 17.5px; line-height: 1.4; display: block;">證實組織低灌流再使用</span>
+              </div>
+              <div style="background: #ffffff; border: 1.5px solid #fde68a; border-radius: 8px; padding: 12px 14px; border-left: 4px solid #f59e0b;">
+                <strong style="color: #0f172a; font-size: 19.5px; display: block; margin-bottom: 3px;">④ 心律與腎功能？</strong>
+                <span style="color: #64748b; font-size: 17.5px; line-height: 1.4; display: block;">注意過速與 Milrinone 蓄積</span>
+              </div>
             </div>
           </div>
         </div>
@@ -628,8 +639,8 @@ def build_presentation():
             <span class="slide-tag red">Safety Checklist</span>
             <span class="slide-tag">安全降壓</span>
           </div>
-          <h2 class="slide-title">安全降壓：給藥前後看什麼？禁忌與回報清單</h2>
-          <p class="slide-subtitle">降壓不是越快越好，過度急驟降壓會造成腦梗塞與冠脈血流崩潰</p>
+          <h2 class="slide-title">安全降壓：給藥前後評估、禁忌查核與回報指標</h2>
+          <p class="slide-subtitle">降壓不是越快越好，過度急速降壓可能誘發腦灌流不足與心肌缺血</p>
         </div>
 
         <div class="slide-body">
@@ -639,12 +650,12 @@ def build_presentation():
                 <span>降壓目標與速度個別設定</span>
                 <span class="sub-tag">疾病專屬</span>
               </div>
-              <ul class="bullet-list blue" style="font-size: 12.5px;">
-                <li>• <strong>急性主動脈症候群：</strong>最緊急！20 分鐘內 SBP 降至 100-120 且 HR < 60。</li>
-                <li>• <strong>腦出血或缺血性腦中風：</strong>依溶栓標的精確控制，避免過低影響腦灌流。</li>
-                <li>• <strong>急性冠心症：</strong>緩慢降壓消除心肌缺血。</li>
-                <li>• <strong>急性肺水腫：</strong>降壓利水改善鬱血。</li>
-                <li>• <strong>一般高血壓急症：</strong>首小時降幅不超過 20–25%！</li>
+              <ul class="bullet-list blue" style="font-size: 20.5px; line-height: 1.55;">
+                <li><strong>急性主動脈症候群：</strong>最緊急！20 分鐘內 SBP 降至 100-120 且 HR &lt; 60。</li>
+                <li><strong>腦出血或缺血性腦中風：</strong>依溶栓標的精確控制，避免過低影響腦灌流。</li>
+                <li><strong>急性冠心症：</strong>緩慢平穩降壓消除心肌缺血。</li>
+                <li><strong>急性肺水腫：</strong>降壓利水改善鬱血。</li>
+                <li><strong>一般高血壓急症：</strong>首小時降幅不超過 20–25%！</li>
               </ul>
             </div>
 
@@ -653,27 +664,38 @@ def build_presentation():
                 <span>給藥前關鍵禁忌確認</span>
                 <span class="sub-tag">床邊查核</span>
               </div>
-              <div style="font-size: 12.5px;">
-                <p style="color: var(--accent-cyan); font-weight: 700; margin-bottom: 2px;">Labetalol 給藥前確認：</p>
-                <p style="color: #cbd5e1; margin-bottom: 6px;">• 心率（HR < 60 暫停）<br>• 心電傳導狀態（PR 延長或 AV block）<br>• 氣喘或支氣管痙攣病史<br>• 血壓及器官灌流</p>
-                
-                <p style="color: var(--accent-amber); font-weight: 700; margin-bottom: 2px;">Nitroglycerin 給藥前確認：</p>
-                <p style="color: #cbd5e1;">• <strong>是否使用 PDE-5 抑制劑</strong>（威而鋼/犀利士）<br>• <strong>是否可能為右心室梗塞</strong><br>• 是否為前負荷依賴狀態</p>
+              <div style="display: flex; flex-direction: column; justify-content: space-between; flex: 1; margin-top: 8px;">
+                <div>
+                  <div style="color: #0f766e; font-weight: 800; font-size: 23px; margin-bottom: 10px;">● Labetalol 給藥前確認：</div>
+                  <ul class="bullet-list cyan" style="font-size: 19.5px; line-height: 1.75; gap: 8px;">
+                    <li>心率（HR &lt; 60 bpm 暫停給藥）</li>
+                    <li>心電傳導狀態（PR 延長或 AV block）</li>
+                    <li>氣喘或嚴重支氣管痙攣病史</li>
+                    <li>基礎血壓及末梢灌流狀況</li>
+                  </ul>
+                </div>
+                <div style="margin-top: 16px;">
+                  <div style="color: #b45309; font-weight: 800; font-size: 23px; margin-bottom: 10px;">● NTG 給藥前確認：</div>
+                  <ul class="bullet-list amber" style="font-size: 19.5px; line-height: 1.75; gap: 8px;">
+                    <li><strong>嚴禁併用 PDE-5 抑制劑</strong>（威而鋼/犀利士）</li>
+                    <li><strong>排除右心室梗塞</strong>（前負荷依賴極高危險）</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
             <div class="card highlight-red">
               <div class="card-title">
-                <span style="color: var(--accent-red);">立即回報危急警訊</span>
-                <span class="sub-tag" style="background: rgba(255, 71, 87, 0.2); color: #fff;">緊急處置</span>
+                <span style="color: #dc2626;">立即回報危急警訊</span>
+                <span class="sub-tag" style="background: #fee2e2; color: #991b1b; border: 1.5px solid #fca5a5;">緊急處置</span>
               </div>
-              <ul class="bullet-list red" style="font-size: 12.5px;">
-                <li>• <strong>血壓明顯下降（低於目標安全值）</strong></li>
-                <li>• <strong>心跳過慢（HR < 50 bpm）</strong></li>
-                <li>• <strong>新發心臟傳導異常或阻滯</strong></li>
-                <li>• <strong>喘鳴（Wheezing）或急性呼吸困難</strong></li>
-                <li>• <strong>意識狀態惡化或嗜睡</strong></li>
-                <li>• <strong>每小時尿量進行性惡化</strong></li>
+              <ul class="bullet-list red" style="font-size: 20.5px; line-height: 1.55; gap: 8px;">
+                <li><strong>血壓明顯劇降（低於目標安全值）</strong></li>
+                <li><strong>心跳過慢（HR &lt; 50 bpm）</strong></li>
+                <li><strong>新發心臟傳導異常或心律不整</strong></li>
+                <li><strong>喘鳴（Wheezing）或急性呼吸困難</strong></li>
+                <li><strong>意識狀態惡化、嗜睡或躁動</strong></li>
+                <li><strong>每小時尿量進行性惡化（&lt; 0.5 mL/kg/h）</strong></li>
               </ul>
             </div>
           </div>
@@ -716,62 +738,84 @@ def build_presentation():
         <div class="slide-body">
           <div class="card-grid grid-3">
             <div class="card highlight-blue">
-              <div class="card-title">
+              <div class="card-title" style="font-size: 25px;">
                 <span>心搏過慢 (Bradycardia)</span>
                 <span class="sub-tag">HR &lt; 50</span>
               </div>
-              <ul class="bullet-list blue" style="font-size: 13px;">
-                <li>• 首選：<strong>Atropine</strong>（1 mg IV push）。</li>
-                <li>• 無效時考慮：</li>
-                <li>- 經皮心律調節（TCP）。</li>
-                <li>- <strong>Dopamine</strong> 持續輸注。</li>
-                <li>- <strong>Epinephrine</strong> 持續輸注。</li>
+              <ul class="bullet-list blue" style="font-size: 21px; line-height: 1.6; margin-top: 10px; display: flex; flex-direction: column; justify-content: flex-start; gap: 20px;">
+                <li>首選：<strong>Atropine</strong>（1 mg IV push）</li>
+                <li>
+                  <div style="margin-bottom: 8px;">若無效時考慮（二線處置）：</div>
+                  <div style="padding-left: 20px; display: flex; flex-direction: column; gap: 10px;">
+                    <div style="display: flex; align-items: baseline; gap: 8px; font-size: 20px; color: #334155; line-height: 1.55;">
+                      <span style="color: #0284c7; font-size: 18px;">•</span>
+                      <span><strong>經皮心律調節（TCP）</strong></span>
+                    </div>
+                    <div style="display: flex; align-items: baseline; gap: 8px; font-size: 20px; color: #334155; line-height: 1.55;">
+                      <span style="color: #0284c7; font-size: 18px;">•</span>
+                      <span><strong>Dopamine</strong> 持續輸注</span>
+                    </div>
+                    <div style="display: flex; align-items: baseline; gap: 8px; font-size: 20px; color: #334155; line-height: 1.55;">
+                      <span style="color: #0284c7; font-size: 18px;">•</span>
+                      <span><strong>Epinephrine</strong> 持續輸注</span>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
 
             <div class="card highlight-cyan">
-              <div class="card-title">
+              <div class="card-title" style="font-size: 25px;">
                 <span>規則窄 QRS 心搏過速</span>
                 <span class="sub-tag">穩定病患</span>
               </div>
-              <ul class="bullet-list" style="font-size: 13px;">
-                <li>• <strong>迷走神經刺激法</strong>（首選改良式 Valsalva）。</li>
-                <li>• <strong>Adenosine</strong>（6 mg 快速推注，必要時 12 mg）。</li>
-                <li>• 後續考慮 β-blocker 或 CCB。</li>
+              <ul class="bullet-list" style="font-size: 21px; line-height: 1.6; margin-top: 10px; display: flex; flex-direction: column; justify-content: flex-start; gap: 24px;">
+                <li><strong>迷走神經刺激法</strong><br>（首選改良式 Valsalva）</li>
+                <li><strong>Adenosine</strong><br>（6 mg 快速推注，必要時 12 mg）</li>
+                <li>後續考慮 <strong>β-blocker 或 CCB</strong></li>
               </ul>
             </div>
 
             <div class="card highlight-red">
-              <div class="card-title">
-                <span style="color: var(--accent-red);">不穩定心搏過速</span>
-                <span class="sub-tag" style="background: rgba(255, 71, 87, 0.2); color: #fff;">電擊優先</span>
+              <div class="card-title" style="font-size: 25px;">
+                <span style="color: #dc2626;">不穩定心搏過速</span>
+                <span class="sub-tag" style="background: rgba(255, 71, 87, 0.2); color: #0f172a;">電擊優先</span>
               </div>
-              <div style="font-size: 13px; color: #cbd5e1;">
-                <p style="margin-bottom: 6px;">出現低血壓、胸痛、休克、意識不清：</p>
-                <div style="background: rgba(255, 71, 87, 0.15); padding: 8px 10px; border-radius: 6px; border-left: 3px solid var(--accent-red); margin-bottom: 6px;">
-                  <strong style="color: #fff;">優先同步電復律（Synchronized Cardioversion）！</strong>
+              <div style="display: flex; flex-direction: column; justify-content: space-between; flex: 1; margin-top: 10px; gap: 14px;">
+                <p style="font-size: 21.5px; color: #0f172a; line-height: 1.7; margin: 0;">
+                  病人出現<strong>低血壓、胸痛、休克、意識不清</strong>等血流動力學危急徵象：
+                </p>
+                <div style="background: #fee2e2; border: 1.5px solid #fecdd3; padding: 16px 18px; border-radius: 8px; border-left: 5px solid var(--accent-red);">
+                  <strong style="color: #991b1b; font-size: 22.5px; line-height: 1.45; display: block;">
+                    ⚡ 立即優先同步電復律<br>（Synchronized Cardioversion）！
+                  </strong>
                 </div>
-                <p style="color: #fca5a5;"><strong>核心鐵律：</strong>不應為了嘗試藥物而延誤電復律！</p>
+                <div style="border-top: 1.5px dashed #fca5a5; padding-top: 12px;">
+                  <p style="color: #b91c1c; font-size: 21px; line-height: 1.7; margin: 0;">
+                    <strong>核心鐵律：</strong><br>
+                    絕不應為了嘗試抗心律不整藥物而延誤緊急電復律！
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="card" style="padding: 10px 16px; margin-top: 2px;">
-            <div style="font-size: 13px; font-weight: 700; color: var(--accent-cyan); margin-bottom: 4px;">
+            <div style="font-size: 19px; font-weight: 700; color: #0f766e; margin-bottom: 4px;">
               改良式 Valsalva 操作 6 步驟 SOP（僅適用於血流動力學穩定的規則窄 QRS 心搏過速）：
             </div>
-            <div style="display: flex; align-items: center; gap: 6px; font-size: 12px;">
-              <div style="background: rgba(255, 255, 255, 0.05); padding: 5px 8px; border-radius: 4px; flex: 1;">1. 病人半坐臥</div>
+            <div style="display: flex; align-items: center; gap: 6px; font-size: 19px;">
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 5px 8px; border-radius: 4px; flex: 1;">1. 病人半坐臥</div>
               <span>→</span>
-              <div style="background: rgba(255, 255, 255, 0.05); padding: 5px 8px; border-radius: 4px; flex: 1;">2. 吹針筒 15 秒</div>
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 5px 8px; border-radius: 4px; flex: 1;">2. 吹針筒 15 秒</div>
               <span>→</span>
-              <div style="background: rgba(255, 255, 255, 0.05); padding: 5px 8px; border-radius: 4px; flex: 1;">3. 立即改平躺</div>
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 5px 8px; border-radius: 4px; flex: 1;">3. 立即改平躺</div>
               <span>→</span>
-              <div style="background: rgba(255, 255, 255, 0.05); padding: 5px 8px; border-radius: 4px; flex: 1;">4. 雙腿抬高 45° 15秒</div>
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 5px 8px; border-radius: 4px; flex: 1;">4. 雙腿抬高 45° 15秒</div>
               <span>→</span>
-              <div style="background: rgba(255, 255, 255, 0.05); padding: 5px 8px; border-radius: 4px; flex: 1;">5. 恢復半坐臥觀察45秒</div>
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 5px 8px; border-radius: 4px; flex: 1;">5. 恢復半坐臥觀察45秒</div>
               <span>→</span>
-              <div style="background: rgba(0, 210, 211, 0.15); padding: 5px 8px; border-radius: 4px; flex: 1; color: var(--accent-cyan);">6. 全程監測 ECG/血壓</div>
+              <div style="background: #ccfbf1; border: 1px solid #99f6e4; padding: 5px 8px; border-radius: 4px; flex: 1; color: #0f766e;">6. 全程監測 ECG/血壓</div>
             </div>
           </div>
         </div>
@@ -1131,7 +1175,7 @@ def build_presentation():
                 <li>• <strong>高劑量輸注：</strong>輸注速率高或每日累積劑量大。</li>
                 <li>• <strong>長時間靜脈輸注：</strong>連續輸注超過 48–72 小時。</li>
                 <li>• <strong>腎功能不全：</strong>代謝產物無法正常排除。</li>
-                <li>• <strong>同時使用其他含丙二醇製劑</strong>（如 Phenytoin、Bactrim）。</li>
+                <li>• <strong>同時使用其他含丙二醇製劑</strong>（如 Phenytoin、Sevatrim）。</li>
               </ul>
             </div>
 
@@ -1512,24 +1556,24 @@ def build_presentation():
         <div class="slide-body">
           <div class="card-grid grid-2">
             <div class="card highlight-red">
-              <div class="card-title">
-                <span style="color: var(--accent-red);">4 大高風險合併用藥</span>
-                <span class="sub-tag" style="background: rgba(255, 71, 87, 0.2); color: #fff;">藥物交互作用</span>
+              <div class="card-title" style="font-size: 27px; margin-bottom: 12px; padding-bottom: 12px;">
+                <span style="color: #dc2626;">4 大高風險合併用藥</span>
+                <span class="sub-tag" style="background: rgba(255, 71, 87, 0.2); color: #0f172a; font-size: 15px; padding: 4px 12px;">藥物交互作用</span>
               </div>
-              <ul class="bullet-list red" style="font-size: 13px;">
-                <li>• <strong>SSRI／SNRI 類抗憂鬱劑：</strong>Fluoxetine, Sertraline, Venlafaxine 等。</li>
-                <li>• <strong>單胺氧化酶抑制劑（MAOI）：</strong>Moclobemide 等。</li>
-                <li>• <strong>抗生素 Linezolid (Zyvox)：</strong>具非選擇性 MAO 抑制活性！</li>
-                <li>• <strong>其他增加血清素作用的藥物：</strong>Fentanyl, Triptans 等。</li>
+              <ul class="bullet-list red" style="font-size: 24px; line-height: 1.85; flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; padding: 8px 0;">
+                <li>• <strong>SSRI／SNRI 類抗憂鬱劑：</strong><br><span style="color: #475569; font-size: 21.5px;">Fluoxetine, Sertraline, Venlafaxine 等。</span></li>
+                <li>• <strong>單胺氧化酶抑制劑（MAOI）：</strong><br><span style="color: #475569; font-size: 21.5px;">Rasagiline 等。</span></li>
+                <li>• <strong>抗生素 Linezolid (Zyvox)：</strong><br><span style="color: #b91c1c; font-weight: 700; font-size: 21.5px;">具非選擇性 MAO 抑制活性！</span></li>
+                <li>• <strong>其他增加血清素作用的藥物：</strong><br><span style="color: #475569; font-size: 21.5px;">Fentanyl, Triptans 等。</span></li>
               </ul>
             </div>
 
             <div class="card highlight-amber">
-              <div class="card-title">
-                <span style="color: var(--accent-amber);">11 項臨床表現</span>
-                <span class="sub-tag">症狀三聯徵</span>
+              <div class="card-title" style="font-size: 27px; margin-bottom: 12px; padding-bottom: 12px;">
+                <span style="color: #d97706;">11 項臨床表現</span>
+                <span class="sub-tag" style="font-size: 15px; padding: 4px 12px;">症狀三聯徵</span>
               </div>
-              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; font-size: 12.5px;">
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 24px; font-size: 22px; line-height: 1.65; flex: 1; align-content: space-evenly; padding: 8px 0;">
                 <div>• 躁動或意識改變</div>
                 <div>• 大量出汗</div>
                 <div>• 心搏過速</div>
@@ -1537,10 +1581,10 @@ def build_presentation():
                 <div>• 體溫過高</div>
                 <div>• 腹瀉</div>
                 <div>• 顫抖</div>
-                <div style="color: var(--accent-cyan); font-weight: bold;">• ★ 反射亢進</div>
-                <div style="color: var(--accent-red); font-weight: bold;">• ★ 肌肉陣攣 (Myoclonus)</div>
+                <div style="color: #0f766e; font-weight: 800;">• ★ 反射亢進</div>
+                <div style="color: #dc2626; font-weight: 800;">• ★ 肌肉陣攣 (Myoclonus)</div>
                 <div>• 肌肉僵硬</div>
-                <div style="grid-column: span 2; color: #fca5a5;">• 嚴重時抽搐 (Seizure)</div>
+                <div style="grid-column: span 2; color: #dc2626; font-weight: 800;">• 嚴重時抽搐 (Seizure) 及高熱昏迷</div>
               </div>
             </div>
           </div>
@@ -1572,46 +1616,53 @@ def build_presentation():
           <p class="slide-subtitle">深入掌握去極化型 vs 非去極化型在起效、代謝路徑、副作用與適應症的差異</p>
         </div>
 
-        <div class="slide-body">
+        <div class="slide-body" style="display: flex; flex-direction: column; justify-content: space-between;">
           <div class="table-container">
-            <table class="med-table">
+            <table class="med-table" style="font-size: 13.5px;">
               <thead>
                 <tr>
-                  <th style="width: 14%;">藥物</th>
-                  <th style="width: 18%;">類型／機轉</th>
-                  <th style="width: 14%;">起效及作用時間</th>
-                  <th style="width: 18%;">主要優點</th>
-                  <th style="width: 20%;">重要缺點／副作用</th>
-                  <th style="width: 16%;">常見臨床情境</th>
+                  <th style="width: 14%; padding: 12px 14px;">藥物</th>
+                  <th style="width: 19%; padding: 12px 14px;">類型／機轉</th>
+                  <th style="width: 14%; padding: 12px 14px;">起效及作用時間</th>
+                  <th style="width: 18%; padding: 12px 14px;">主要優點</th>
+                  <th style="width: 19%; padding: 12px 14px;">重要缺點／副作用</th>
+                  <th style="width: 16%; padding: 12px 14px;">常見臨床情境</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><strong style="color: var(--accent-red);">Succinylcholine</strong></td>
-                  <td>去極化型；持續刺激菸鹼型乙醯膽鹼受體，使肌肉無法再次收縮</td>
-                  <td>起效約 60–90 秒；<br>持續約 5–10 分鐘</td>
-                  <td>起效最快、作用時間短</td>
-                  <td><strong>高血鉀、心搏過慢、惡性高熱</strong>；可能增加眼內壓</td>
-                  <td>快速麻醉誘導插管（RSI）</td>
+                  <td style="padding: 14px 14px;"><strong style="color: var(--accent-red); font-size: 14px;">Succinylcholine</strong></td>
+                  <td style="padding: 14px 14px; line-height: 1.5;">去極化型；持續刺激菸鹼型乙醯膽鹼受體，使肌肉無法再次收縮</td>
+                  <td style="padding: 14px 14px; line-height: 1.5;">起效約 60–90 秒；<br>持續約 5–10 分鐘</td>
+                  <td style="padding: 14px 14px; line-height: 1.5;">起效最快、作用時間短</td>
+                  <td style="padding: 14px 14px; line-height: 1.5;"><strong style="color: #fca5a5;">高血鉀、心搏過慢、惡性高熱</strong>；可能增加眼內壓</td>
+                  <td style="padding: 14px 14px; line-height: 1.5;">快速麻醉誘導插管（RSI）</td>
                 </tr>
                 <tr>
-                  <td><strong style="color: var(--accent-blue);">Rocuronium</strong></td>
-                  <td>非去極化型；競爭性阻斷運動終板的菸鹼型乙醯膽鹼受體</td>
-                  <td>起效約 1–2 分鐘；<br>持續約 30–60 分鐘</td>
-                  <td>高劑量時起效快速；血流動力學影響少；<strong>可用 Sugammadex 逆轉</strong></td>
-                  <td>作用時間較長；肝功能不全可能延長阻斷；可能出現過敏反應</td>
-                  <td>快速麻醉誘導插管、一般插管、呼吸器病人神經肌肉阻斷</td>
+                  <td style="padding: 14px 14px;"><strong style="color: var(--accent-blue); font-size: 14px;">Rocuronium</strong></td>
+                  <td style="padding: 14px 14px; line-height: 1.5;">非去極化型；競爭性阻斷運動終板的菸鹼型乙醯膽鹼受體</td>
+                  <td style="padding: 14px 14px; line-height: 1.5;">起效約 1–2 分鐘；<br>持續約 30–60 分鐘</td>
+                  <td style="padding: 14px 14px; line-height: 1.5;">高劑量時起效快速；血流動力學影響少；<strong style="color: var(--accent-cyan);">可用 Sugammadex 逆轉</strong></td>
+                  <td style="padding: 14px 14px; line-height: 1.5;">作用時間較長；肝功能不全可能延長阻斷；可能出現過敏反應</td>
+                  <td style="padding: 14px 14px; line-height: 1.5;">快速麻醉誘導插管、一般插管、呼吸器病人神經肌肉阻斷</td>
                 </tr>
                 <tr>
-                  <td><strong style="color: var(--accent-cyan);">Atracurium</strong></td>
-                  <td>非去極化型；競爭性阻斷乙醯膽鹼受體</td>
-                  <td>起效約 2–3 分鐘；<br>持續約 20–35 分鐘</td>
-                  <td><strong>主要經 Hofmann degradation 分解</strong>，較不依賴肝腎功能</td>
-                  <td><strong>組織胺釋放</strong>、皮膚潮紅、血壓下降、支氣管痙攣；產生 Laudanosine 代謝物</td>
-                  <td>ICU 持續神經肌肉阻斷、肝腎功能不全患者</td>
+                  <td style="padding: 14px 14px;"><strong style="color: var(--accent-cyan); font-size: 14px;">Atracurium</strong></td>
+                  <td style="padding: 14px 14px; line-height: 1.5;">非去極化型；競爭性阻斷乙醯膽鹼受體</td>
+                  <td style="padding: 14px 14px; line-height: 1.5;">起效約 2–3 分鐘；<br>持續約 20–35 分鐘</td>
+                  <td style="padding: 14px 14px; line-height: 1.5;"><strong style="color: var(--accent-cyan);">主要經 Hofmann degradation 分解</strong>，較不依賴肝腎功能</td>
+                  <td style="padding: 14px 14px; line-height: 1.5;"><strong style="color: var(--accent-amber);">組織胺釋放</strong>、皮膚潮紅、血壓下降、支氣管痙攣；產生 Laudanosine 代謝物</td>
+                  <td style="padding: 14px 14px; line-height: 1.5;">ICU 持續神經肌肉阻斷、肝腎功能不全患者</td>
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          <div class="alert-banner cyan" style="margin-top: 8px; font-size: 13px; padding: 8px 14px;">
+            <span class="icon">💡</span>
+            <div>
+              <strong>臨床用藥精華：</strong><strong>Succinylcholine</strong> 起效最快但禁忌最多（高血鉀、燒傷、去神經病變）；<strong>Rocuronium</strong> 具專屬解毒逆轉劑（Sugammadex）；<strong>Atracurium</strong> 不經肝腎代謝，為器官衰竭首選！
+            </div>
           </div>
         </div>
 
@@ -1634,28 +1685,28 @@ def build_presentation():
           <p class="slide-subtitle">肌肉鬆弛劑只癱瘓骨骼肌運動，絕無鎮靜與止痛效果；必須給予充分鎮痛鎮靜</p>
         </div>
 
-        <div class="slide-body">
-          <div style="background: rgba(255, 71, 87, 0.15); border: 2px solid var(--accent-red); padding: 12px 20px; border-radius: 10px; text-align: center;">
-            <div style="font-size: 22px; font-weight: 900; color: #ffffff;">
-              Paralysis ≠ Sedation ≠ Analgesia
+        <div class="slide-body" style="justify-content: flex-start; gap: 24px;">
+          <div style="background: #fef2f2; border: 2.5px solid #ef4444; padding: 18px 24px; border-radius: 12px; text-align: center; box-shadow: 0 4px 14px rgba(239, 68, 68, 0.08);">
+            <div style="font-size: 32px; font-weight: 900; color: #991b1b; letter-spacing: 0.5px; margin-bottom: 6px;">
+              ⚠️ Paralysis ≠ Sedation ≠ Analgesia
             </div>
-            <div style="font-size: 18.5px; color: #fecdd3; margin-top: 2px; font-weight: 600;">
-              肌肉癱瘓（不動） ≠ 鎮靜（無意識） ≠ 止痛（無痛覺）
+            <div style="font-size: 23px; color: #b91c1c; font-weight: 700;">
+              肌肉癱瘓（不動） ≠ 鎮靜（無意識） ≠ 止痛（無感覺）
             </div>
           </div>
 
-          <div class="card highlight-blue" style="margin-top: 6px;">
-            <div class="card-title">
-              <span>使用神經肌肉阻斷劑時的 6 大臨床守則</span>
-              <span class="sub-tag">必備常規</span>
+          <div class="card highlight-blue" style="flex: 1; display: flex; flex-direction: column; padding: 26px 36px; border-radius: 14px;">
+            <div class="card-title" style="font-size: 26px; margin-bottom: 16px;">
+              <span style="color: #0369a1; font-weight: 800;">使用神經肌肉阻斷劑時的 6 大臨床守則</span>
+              <span class="sub-tag" style="font-size: 15px; padding: 4px 14px; background: #e0f2fe; color: #0369a1; border: 1.5px solid #7dd3fc;">必需常規</span>
             </div>
-            <ul class="bullet-list blue" style="font-size: 13.5px;">
-              <li>• <strong>病人可能仍有意識！</strong>聽得到周遭聲音與對話。</li>
-              <li>• <strong>病人可能仍會感到劇烈疼痛！</strong>氣管插管刺激與傷口抽痛。</li>
-              <li>• <strong>無法以動作判斷疼痛或鎮靜不足</strong>（無法翻動或蹙眉）。</li>
-              <li>• <strong>應先確保充分止痛與鎮靜</strong>，切忌單獨調高肌鬆劑！</li>
-              <li>• <strong>依院內流程監測神經肌肉阻斷程度</strong>（如 TOF 四連刺激儀）。</li>
-              <li>• <strong>持續進行眼睛保護（眼膏/敷料閉合）、翻身減壓與壓傷預防</strong>。</li>
+            <ul class="bullet-list blue" style="font-size: 22.5px; line-height: 1.65; display: flex; flex-direction: column; justify-content: space-around; flex: 1; margin: 0; padding-left: 0;">
+              <li><strong>病人可能仍有意識！</strong> 聽得到周遭所有醫護交談聲音與環境動靜。</li>
+              <li><strong>病人可能仍會感到劇烈疼痛！</strong> 包含氣管插管咽喉刺激、傷口抽痛與管路拉扯。</li>
+              <li><strong>無法以自主動作判斷疼痛或鎮靜不足</strong>（無法翻動、蹙眉、流淚或呼吸搏抗）。</li>
+              <li><strong>切忌單獨調高肌鬆劑！</strong> 應先確保充分給予足量止痛劑與鎮靜劑。</li>
+              <li><strong>依院內流程客觀監測阻斷深度</strong>（如使用 TOF 四連刺激儀監測 Twitch 回應）。</li>
+              <li><strong>落實被動防護措施</strong>：眼膏潤滑／敷料閉合保護角膜、定時翻身減壓預防壓傷。</li>
             </ul>
           </div>
         </div>
@@ -1758,7 +1809,7 @@ def build_presentation():
                 <span class="sub-tag">非分段肝素</span>
               </div>
               <ul class="bullet-list blue" style="font-size: 13px;">
-                <li>• <strong>類別：</strong>非分段肝素（未分餾）。</li>
+                <li>• <strong>類別：</strong>非分段肝素。</li>
                 <li>• <strong>主要監測：</strong><strong>aPTT</strong> 或 <strong>anti-Xa</strong>、血紅素、<strong>血小板</strong>。</li>
                 <li>• <strong>重要風險：</strong>出血、<strong>肝素誘發血小板低下症 (HIT)</strong>。</li>
                 <li>• <strong>優勢：</strong>半衰期短，有專屬解毒劑 Protamine。</li>
@@ -1828,24 +1879,28 @@ def build_presentation():
               </ul>
             </div>
 
-            <div class="card highlight-red">
+            <div class="card highlight-red" style="display: flex; flex-direction: column; justify-content: space-between;">
               <div class="card-title">
                 <span style="color: var(--accent-red);">4Ts 評估與中高機率緊急處置</span>
                 <span class="sub-tag" style="background: rgba(255, 71, 87, 0.2); color: #fff;">緊急 SOP</span>
               </div>
-              <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; padding: 8px 12px; border-radius: 8px; font-size: 18.5px; margin-bottom: 8px; line-height: 1.5;">
-                <strong style="color: #0f172a;">4Ts 評估項目（英文字義與臨床標準）：</strong><br>
-                • <strong style="color: #0284c7;">T</strong><strong style="color: #0f172a;">hrombocytopenia</strong>：血小板下降幅度（下降 &gt;50% 得高分）<br>
-                • <strong style="color: #0284c7;">T</strong><strong style="color: #0f172a;">iming</strong>：發生時間（第 5–10 天，或近期曾暴露者 ≤1 天）<br>
-                • <strong style="color: #0284c7;">T</strong><strong style="color: #0f172a;">hrombosis</strong>：血栓或其他表現（新血栓、注射處皮膚壞死）<br>
-                • o<strong style="color: #0284c7;">T</strong><strong style="color: #0f172a;">her causes</strong>：排除其他可能原因（無其他顯著血小板低下原因）
+              <div style="background: rgba(255, 255, 255, 0.05); border: 1.5px solid rgba(255, 255, 255, 0.15); padding: 10px 14px; border-radius: 8px; font-size: 13.5px; line-height: 1.6;">
+                <strong style="color: #fff; display: block; margin-bottom: 4px; font-size: 14px;">4Ts 評估項目（英文字義與臨床標準）：</strong>
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+                  <div>• <strong style="color: var(--accent-cyan); font-size: 14.5px;">T</strong>hrombocytopenia：血小板下降幅度（下降 &gt;50% 得 2 分）</div>
+                  <div>• <strong style="color: var(--accent-cyan); font-size: 14.5px;">T</strong>iming：發生時間（第 5–10 天，或近期曾暴露者 ≤1 天）</div>
+                  <div>• <strong style="color: var(--accent-cyan); font-size: 14.5px;">T</strong>hrombosis：血栓表現（新發血栓、注射處皮膚壞死）</div>
+                  <div>• o<strong style="color: var(--accent-cyan); font-size: 14.5px;">T</strong>her causes：排除其他原因（無其他顯著血小板低下因素）</div>
+                </div>
               </div>
-              <div style="font-size: 12.5px; color: #fecdd3;">
-                <strong>中、高機率處置 4 步驟：</strong><br>
-                1. <strong>立即回報醫師</strong>。<br>
-                2. <strong>立即停止所有 Heparin 來源</strong>（含沖管、透析塗層）。<br>
-                3. <strong>嚴禁輸注血小板！</strong>（防廣泛血栓形成）。<br>
-                4. <strong>評估換用非 Heparin 抗凝治療</strong>（如 Argatroban），並送檢檢驗。
+              <div style="font-size: 13.5px; line-height: 1.65; color: #fecdd3; padding: 6px 2px 2px 2px;">
+                <strong style="font-size: 14px; color: #fca5a5; display: block; margin-bottom: 4px;">中、高機率處置 4 步驟：</strong>
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+                  <div><strong>1. 立即回報醫師</strong>並啟動 HIT 評估。</div>
+                  <div><strong>2. 立即停止所有 Heparin 來源</strong>（含沖管、透析塗層）。</div>
+                  <div><strong>3. 嚴禁輸注血小板！</strong>（避免引發廣泛致死性血栓）。</div>
+                  <div><strong>4. 評估換用非 Heparin 抗凝治療</strong>（如 Argatroban）。</div>
+                </div>
               </div>
             </div>
           </div>
@@ -1990,7 +2045,7 @@ def build_presentation():
             <div class="card highlight-cyan" style="grid-column: span 1.5;">
               <div class="card-title">
                 <span>Macrolide／Fluoroquinolone</span>
-                <span class="sub-tag">呼吸道抗感染</span>
+                <span class="sub-tag">呼吸道感染</span>
               </div>
               <ul class="bullet-list" style="font-size: 12.5px;">
                 <li>• <strong>不良反應：</strong><strong>QT 間期延長、心室心律不整（TdP）</strong>。</li>
@@ -2099,80 +2154,8 @@ def build_presentation():
     # Slide 37: 哪些藥物可能延長QT？
     slides.append('''
       <!-- SLIDE 37: 哪些藥物可能延長QT？ -->
-      <section class="slide" data-slide="37" data-section="PART 5｜看到異常，要想到可能是藥物">
-        <div class="slide-header">
-          <div class="tag-row">
-            <span class="slide-tag red">Cardiotoxicity</span>
-            <span class="slide-tag">QT 風險</span>
-          </div>
-          <h2 class="slide-title">ICU 哪些藥物可能延長 QT 間期？</h2>
-          <p class="slide-subtitle">哪些藥物會直接讓心電圖 QT 延長？哪些利尿劑會因造成低血鉀而間接促發？</p>
-        </div>
+      
 
-        <div class="slide-body">
-          <div class="card-grid grid-3">
-            <div class="card highlight-red" style="grid-column: span 2;">
-              <div class="card-title">
-                <span style="color: var(--accent-red);">明確延長 QT／TdP 風險藥物</span>
-                <span class="sub-tag" style="background: rgba(255, 71, 87, 0.2); color: #fff;">直接延長</span>
-              </div>
-              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; font-size: 12.5px;">
-                <div>
-                  <strong style="color: var(--accent-cyan);">抗心律不整藥：</strong>
-                  <p style="color: #cbd5e1;">• Amiodarone</p>
-                  <strong style="color: var(--accent-cyan); display: inline-block; margin-top: 4px;">抗感染藥物：</strong>
-                  <p style="color: #cbd5e1;">
-                    • <strong>Macrolides：</strong>Azithromycin, Erythromycin, Clarithromycin<br>
-                    • <strong>Fluoroquinolones：</strong>Levofloxacin, Moxifloxacin, Ciprofloxacin<br>
-                    • <strong>Azole 類抗黴菌藥：</strong>Fluconazole, Voriconazole, Posaconazole
-                  </p>
-                </div>
-                <div>
-                  <strong style="color: var(--accent-amber);">止吐與腸胃用藥：</strong>
-                  <p style="color: #cbd5e1;">• Ondansetron、Droperidol、Metoclopramide</p>
-                  <strong style="color: var(--accent-amber); display: inline-block; margin-top: 4px;">精神科與止痛藥物：</strong>
-                  <p style="color: #cbd5e1;">• Haloperidol、Ziprasidone、Quetiapine</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card highlight-amber">
-              <div class="card-title">
-                <span style="color: var(--accent-amber);">間接風險與重要例外</span>
-                <span class="sub-tag">機制鑑別</span>
-              </div>
-              <div style="font-size: 12.5px;">
-                <p style="color: #fef3c7; font-weight: 700; margin-bottom: 2px;">間接增加 TdP 風險藥物：</p>
-                <p style="color: #cbd5e1; margin-bottom: 6px;">
-                  • <strong>Loop diuretics</strong><br>
-                  • <strong>Thiazide diuretics</strong><br>
-                  • <strong>Amphotericin B</strong><br>
-                  <em>機轉：透過<strong>低血鉀或低血鎂</strong>，放大其他藥物的 QT 延長風險！</em>
-                </p>
-                <div style="background: rgba(56, 189, 248, 0.15); padding: 5px 8px; border-radius: 4px;">
-                  <strong style="color: #fff;">重要例外：Isavuconazole</strong>
-                  <p style="color: #bae6fd; font-size: 11.5px;">會<strong>縮短 QT</strong>，短 QT 症候群患者禁用。</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="alert-banner cyan" style="margin-top: 4px;">
-            <span class="icon">⚡</span>
-            <div>
-              <strong>本頁總結：</strong>TdP 風險通常不是單一藥物造成，而是「<strong>QT 藥物 ＋ 心搏過慢 ＋ 低血鉀／低血鎂 ＋ 藥物蓄積</strong>」共同形成！
-            </div>
-          </div>
-        </div>
-
-        <div class="slide-footer-bar">
-          <span>Slide 37</span>
-        </div>
-      </section>
-    ''')
-
-    # Slide 38: 什麼情況下QT特別危險？
-    slides.append('''
       <!-- SLIDE 38: 什麼情況下QT特別危險？ -->
       <section class="slide" data-slide="38" data-section="PART 5｜看到異常，要想到可能是藥物">
         <div class="slide-header">
@@ -2224,23 +2207,13 @@ def build_presentation():
                 <span style="color: var(--accent-blue);">臨床處置 5 步驟</span>
                 <span class="sub-tag">急救流程</span>
               </div>
-              <div style="display: flex; flex-direction: column; gap: 5px; font-size: 12.5px;">
-                <div style="background: rgba(56, 189, 248, 0.1); padding: 5px 8px; border-radius: 4px;">
-                  <strong>1. 確認心電圖與 QTc。</strong>
-                </div>
-                <div style="background: rgba(255, 71, 87, 0.1); padding: 5px 8px; border-radius: 4px;">
-                  <strong>2. 檢視並停用所有延長 QT 藥物。</strong>
-                </div>
-                <div style="background: rgba(0, 210, 211, 0.1); padding: 5px 8px; border-radius: 4px;">
-                  <strong>3. 檢查並矯正血鉀、血鎂與血鈣。</strong>
-                </div>
-                <div style="background: rgba(245, 158, 11, 0.1); padding: 5px 8px; border-radius: 4px;">
-                  <strong>4. 評估心搏過慢及藥物蓄積。</strong>
-                </div>
-                <div style="background: rgba(255, 71, 87, 0.2); padding: 5px 8px; border-radius: 4px;">
-                  <strong>5. 明顯異常時立即回報醫師並備除顫器！</strong>
-                </div>
-              </div>
+              <ol style="list-style: none; display: flex; flex-direction: column; justify-content: space-between; flex: 1; gap: 10px; font-size: 13.5px; line-height: 1.6; margin-top: 14px; padding: 0;">
+                <li><strong style="color: var(--accent-blue);">1.</strong> <strong>確認心電圖與 QTc。</strong></li>
+                <li><strong style="color: var(--accent-blue);">2.</strong> <strong>檢視並停用所有延長 QT 藥物。</strong></li>
+                <li><strong style="color: var(--accent-blue);">3.</strong> <strong>檢查並矯正血鉀、血鎂與血鈣。</strong></li>
+                <li><strong style="color: var(--accent-blue);">4.</strong> <strong>評估心搏過慢及藥物蓄積。</strong></li>
+                <li><strong style="color: var(--accent-red);">5.</strong> <strong style="color: var(--accent-red);">明顯異常時立即回報醫師並備除顫器！</strong></li>
+              </ol>
             </div>
           </div>
         </div>
@@ -2397,10 +2370,10 @@ def build_presentation():
                 <span style="color: var(--accent-blue);">情境一：血小板腰斬暴跌</span>
                 <span class="sub-tag">凝血異常</span>
               </div>
-              <p style="font-size: 13px; color: #cbd5e1;">
+              <p style="font-size: 15.5px; line-height: 1.5; color: #f8fafc; margin-top: 4px; margin-bottom: 8px;">
                 <strong>Heparin 使用第 6 天，血小板由 22 萬降至 9 萬／mm³。</strong>
               </p>
-              <ul class="bullet-list blue" style="font-size: 12.5px; margin-top: 4px;">
+              <ul class="bullet-list blue" style="font-size: 14px; flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; gap: 8px;">
                 <li>• 血小板下降超過 50%。</li>
                 <li>• <strong>懷疑 HIT！</strong></li>
                 <li>• <strong>評估 4Ts 並立即回報</strong>，停止所有肝素來源。</li>
@@ -2412,10 +2385,10 @@ def build_presentation():
                 <span style="color: var(--accent-cyan);">情境二：QTc 顯著延長伴低血鉀</span>
                 <span class="sub-tag">心律危象</span>
               </div>
-              <p style="font-size: 13px; color: #cbd5e1;">
+              <p style="font-size: 15.5px; line-height: 1.5; color: #f8fafc; margin-top: 4px; margin-bottom: 8px;">
                 <strong>使用 Amiodarone 及 Levofloxacin，QTc 525 ms，血鉀 3.1 mmol/L。</strong>
               </p>
-              <ul class="bullet-list" style="font-size: 12.5px; margin-top: 4px;">
+              <ul class="bullet-list" style="font-size: 14px; flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; gap: 8px;">
                 <li>• 多重 QT 延長藥物疊加。</li>
                 <li>• 低血鉀顯著增加致死性 TdP 風險。</li>
                 <li>• <strong>檢視藥物、心電圖及電解質並立即回報緊急補鉀！</strong></li>
@@ -2427,10 +2400,10 @@ def build_presentation():
                 <span style="color: var(--accent-amber);">情境三：酸中毒、心跳慢、CK飆高</span>
                 <span class="sub-tag">代謝崩潰</span>
               </div>
-              <p style="font-size: 13px; color: #cbd5e1;">
+              <p style="font-size: 15.5px; line-height: 1.5; color: #f8fafc; margin-top: 4px; margin-bottom: 8px;">
                 <strong>Propofol 持續輸注後出現乳酸上升、代謝性酸中毒、肌酸激酶升高及心搏過慢。</strong>
               </p>
-              <ul class="bullet-list amber" style="font-size: 12.5px; margin-top: 4px;">
+              <ul class="bullet-list amber" style="font-size: 14px; flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; gap: 8px;">
                 <li>• <strong>高度懷疑 Propofol 輸注症候群 (PRIS)！</strong></li>
                 <li>• <strong>立即回報並評估停止 Propofol 及替代鎮靜策略。</strong></li>
               </ul>
@@ -2441,10 +2414,10 @@ def build_presentation():
                 <span style="color: var(--accent-red);">情境四：皮疹、臉腫、高燒伴肝衰竭</span>
                 <span class="sub-tag">嚴重藥疹</span>
               </div>
-              <p style="font-size: 13px; color: #cbd5e1;">
+              <p style="font-size: 15.5px; line-height: 1.5; color: #f8fafc; margin-top: 4px; margin-bottom: 8px;">
                 <strong>抗生素治療後出現發燒、臉部水腫、全身紅疹、嗜酸性白血球增加及肝功能異常。</strong>
               </p>
-              <ul class="bullet-list red" style="font-size: 12.5px; margin-top: 4px;">
+              <ul class="bullet-list red" style="font-size: 14px; flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; gap: 8px;">
                 <li>• <strong>高度懷疑 DRESS 症候群！</strong></li>
                 <li>• <strong>絕非單純藥物紅疹！</strong></li>
                 <li>• <strong>立即回報並評估停用可疑藥物。</strong></li>
@@ -2472,14 +2445,14 @@ def build_presentation():
           <p class="slide-subtitle">落實「五項病人變化」與「四項用藥確認」，築起重症病人用藥安全城牆</p>
         </div>
 
-        <div class="slide-body">
-          <div class="card-grid grid-2">
-            <div class="card highlight-blue">
-              <div class="card-title">
-                <span style="color: var(--accent-blue);">五項病人變化（床邊必看）</span>
-                <span class="sub-tag">生理指標</span>
+        <div class="slide-body" style="justify-content: center; gap: 28px;">
+          <div class="card-grid grid-2" style="flex: 0 0 auto; margin-bottom: 0;">
+            <div class="card highlight-blue" style="padding: 20px 28px; justify-content: flex-start; gap: 14px;">
+              <div class="card-title" style="font-size: 25px; margin-bottom: 0;">
+                <span style="color: #0284c7; font-weight: 800;">五項病人變化（床邊必看）</span>
+                <span class="sub-tag" style="font-size: 14.5px; padding: 3px 10px;">生理指標</span>
               </div>
-              <ul class="bullet-list blue" style="font-size: 13.5px;">
+              <ul class="bullet-list blue" style="font-size: 21px; line-height: 1.5; gap: 12px; margin: 0; padding-left: 0;">
                 <li><strong>1. 血壓、心率與器官灌流</strong>（膚溫、CRT、尿量）。</li>
                 <li><strong>2. 意識、鎮靜深度與呼吸</strong>（RASS、RR、通氣）。</li>
                 <li><strong>3. 心電圖與 QTc</strong>（波形、傳導與 QTc 間期）。</li>
@@ -2488,24 +2461,24 @@ def build_presentation():
               </ul>
             </div>
 
-            <div class="card highlight-cyan">
-              <div class="card-title">
-                <span style="color: var(--accent-cyan);">四項用藥確認（給藥自問）</span>
-                <span class="sub-tag">給藥檢核</span>
+            <div class="card highlight-cyan" style="padding: 20px 28px; justify-content: flex-start; gap: 14px;">
+              <div class="card-title" style="font-size: 25px; margin-bottom: 0;">
+                <span style="color: #0f766e; font-weight: 800;">四項用藥確認（給藥自問）</span>
+                <span class="sub-tag" style="font-size: 14.5px; padding: 3px 10px;">給藥檢核</span>
               </div>
-              <ul class="bullet-list" style="font-size: 13.5px;">
-                <li>• <strong>適應症：</strong>為什麼給？目標是什麼？</li>
-                <li>• <strong>管路：</strong>從哪條管路給藥？周邊還是中央靜脈？</li>
-                <li>• <strong>趨勢：</strong>數值及症狀如何變化？是否有改善？</li>
-                <li>• <strong>救援處置：</strong>異常時如何暫停、處理與回報？</li>
+              <ul class="bullet-list" style="font-size: 21px; line-height: 1.5; gap: 16px; margin: 0; padding-left: 0;">
+                <li><strong>適應症：</strong>為什麼給？目標是什麼？</li>
+                <li><strong>管路：</strong>從哪條管路給藥？周邊還是中央靜脈？</li>
+                <li><strong>趨勢：</strong>數值及症狀如何變化？是否有改善？</li>
+                <li><strong>救援處置：</strong>異常時如何暫停、處理與回報？</li>
               </ul>
             </div>
           </div>
 
-          <div style="background: linear-gradient(135deg, rgba(0, 82, 212, 0.2), rgba(67, 100, 247, 0.2)); border: 1px solid var(--accent-blue); padding: 10px 18px; border-radius: 8px; text-align: center; margin-top: 2px;">
-            <span style="font-size: 18.5px; font-weight: 800; color: #ffffff;">
-              結語：知道為什麼給、給完看什麼、異常時立即辨識與回報！
-            </span>
+          <div style="background: linear-gradient(135deg, #eff6ff 0%, #e0f2fe 100%); border: 3px solid #0284c7; padding: 24px 32px; border-radius: 14px; text-align: center; box-shadow: 0 6px 16px rgba(2, 132, 199, 0.15);">
+            <div style="font-size: 29px; font-weight: 900; color: #0369a1; letter-spacing: 0.5px;">
+              🎯 結語：知道為什麼給、給完看什麼、異常時立即辨識與回報！
+            </div>
           </div>
         </div>
 
@@ -2518,56 +2491,56 @@ def build_presentation():
     # Slide 43: Q&A / 感謝聆聽
     slides.append('''
       <!-- SLIDE 43: Q&A 與 致謝 -->
-      <section class="slide" data-slide="43" data-section="整合應用與總結" style="justify-content: center; align-items: center; text-align: center; padding: 40px 60px;">
-        <div style="max-width: 800px; display: flex; flex-direction: column; align-items: center;">
-          <div class="cover-top-tag" style="margin-bottom: 14px;">
+      <section class="slide" data-slide="43" data-section="整合應用與總結" style="justify-content: center; align-items: center; text-align: center; padding: 36px 50px;">
+        <div style="max-width: 1480px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+          <div class="cover-top-tag" style="margin-bottom: 14px; font-size: 17px; padding: 6px 18px;">
             <span class="pulse-dot"></span>
             <span>Q & A • 討論與致謝</span>
           </div>
           
-          <h2 style="font-size: 36px; font-weight: 900; color: #ffffff; line-height: 1.3; margin-bottom: 14px;">
+          <h2 style="font-size: 46px; font-weight: 900; color: #0f172a; line-height: 1.25; margin-bottom: 14px;">
             感謝聆聽 • 共同守護加護病房用藥安全
           </h2>
 
-          <p style="font-size: 18.5px; color: #94a3b8; line-height: 1.6; margin-bottom: 24px; max-width: 660px;">
+          <p style="font-size: 22px; color: #475569; line-height: 1.6; margin-bottom: 26px; max-width: 1200px;">
             重症病人病況複雜，護理同仁的床邊敏銳監測是防範嚴重不良反應的關鍵盾牌。<br>
             給藥時多一分警覺，就能為病人多守護一分生機。
           </p>
 
-          <div class="card-grid grid-3" style="width: 100%; margin-bottom: 24px; text-align: left;">
-            <div class="card highlight-cyan" style="padding: 16px 18px;">
-              <div style="color: #0f766e; font-weight: 800; font-size: 18px; margin-bottom: 8px;">
+          <div class="card-grid grid-3" style="width: 100%; margin-bottom: 28px; text-align: left; gap: 24px;">
+            <div class="card highlight-cyan" style="padding: 24px 22px; display: flex; flex-direction: column;">
+              <div style="color: #0f766e; font-weight: 800; font-size: 23px; margin-bottom: 14px;">
                 ● 血流動力學藥物
               </div>
-              <ul class="bullet-list" style="font-size: 18.5px; line-height: 1.55;">
+              <ul class="bullet-list" style="font-size: 20px; line-height: 1.6; display: flex; flex-direction: column; justify-content: space-between; flex: 1; margin: 0; padding: 0;">
                 <li>給升壓劑前<strong>先補足血容積</strong></li>
                 <li>動態監測<strong>末梢膚溫、尿量與乳酸</strong></li>
-                <li>外滲處置：<strong>停藥留管、抽吸殘藥、抬高熱敷</strong></li>
+                <li>外滲處置：<strong>停藥留管、抽吸殘藥</strong><br>患部<strong>抬高並熱敷</strong></li>
               </ul>
             </div>
-            <div class="card highlight-amber" style="padding: 16px 18px;">
-              <div style="color: #b45309; font-weight: 800; font-size: 18px; margin-bottom: 8px;">
+            <div class="card highlight-amber" style="padding: 24px 22px; display: flex; flex-direction: column;">
+              <div style="color: #b45309; font-weight: 800; font-size: 23px; margin-bottom: 14px;">
                 ● 鎮靜・止痛・肌鬆
               </div>
-              <ul class="bullet-list" style="font-size: 18.5px; line-height: 1.55;">
+              <ul class="bullet-list" style="font-size: 20px; line-height: 1.6; display: flex; flex-direction: column; justify-content: space-between; flex: 1; margin: 0; padding: 0;">
                 <li>落實<strong>先止痛再鎮靜</strong>與目標輕鎮靜</li>
-                <li>Propofol 長期輸注警惕 <strong>PRIS 代謝酸中毒</strong></li>
-                <li>肌鬆劑無止痛效果（<strong>Paralysis ≠ Analgesia</strong>）</li>
+                <li>Propofol 長期輸注<br>警惕 <strong>PRIS 代謝酸中毒</strong></li>
+                <li>肌鬆劑<strong>無止痛效果</strong><br>（Paralysis ≠ Analgesia）</li>
               </ul>
             </div>
-            <div class="card highlight-red" style="padding: 16px 18px;">
-              <div style="color: #b91c1c; font-weight: 800; font-size: 18px; margin-bottom: 8px;">
+            <div class="card highlight-red" style="padding: 24px 22px; display: flex; flex-direction: column;">
+              <div style="color: #b91c1c; font-weight: 800; font-size: 23px; margin-bottom: 14px;">
                 ● 凝血・心律・皮疹
               </div>
-              <ul class="bullet-list" style="font-size: 18.5px; line-height: 1.55;">
+              <ul class="bullet-list" style="font-size: 20px; line-height: 1.6; display: flex; flex-direction: column; justify-content: space-between; flex: 1; margin: 0; padding: 0;">
                 <li>用肝素後<strong>血小板降幅 &gt;50%</strong> 警惕 HIT</li>
-                <li><strong>QTc ≥ 500 ms</strong> 檢視多重用藥並積極補鉀鎂</li>
-                <li>新發皮疹<strong>合併黏膜潰爛或發燒</strong>立即通報</li>
+                <li><strong>QTc ≥ 500 ms</strong> 檢視多重用藥<br>並積極補鉀補鎂</li>
+                <li>新發皮疹<strong>合併黏膜潰爛或發燒</strong><br>立即通報醫師</li>
               </ul>
             </div>
           </div>
 
-          <div style="display: flex; gap: 20px; align-items: center; font-size: 18.5px; color: #e2e8f0;">
+          <div style="display: flex; gap: 28px; align-items: center; font-size: 22px; color: #1e293b; margin-top: 4px;">
             <div><strong>主講人：</strong>李芸瑄 藥師</div>
             <div>•</div>
             <div><strong>日期：</strong>2026.09.09</div>
