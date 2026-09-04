@@ -43,7 +43,7 @@ def build_presentation():
     # Slide 2: 學習目標
     slides.append('''
       <!-- SLIDE 2: 學習目標 -->
-      <section class="slide" data-slide="2" data-section="第一部分｜開場">
+      <section class="slide" data-slide="2" data-section="第一頁封面">
         <div class="slide-header">
           <div class="tag-row">
             <span class="slide-tag cyan">Course Objectives</span>
@@ -54,44 +54,44 @@ def build_presentation():
         </div>
 
         <div class="slide-body">
-          <div class="card-grid grid-2" style="margin-top: 4px;">
-            <div class="card highlight-blue">
-              <div class="card-title">
-                <span>01. 依治療目的辨認ICU藥物</span>
-                <span class="sub-tag">分類與定位</span>
+          <div class="card-grid grid-2" style="gap: 24px 28px; flex: 1;">
+            <div class="card highlight-blue" style="padding: 32px 36px; display: flex; flex-direction: column; justify-content: flex-start; gap: 18px;">
+              <div class="card-title" style="font-size: 28px; margin-bottom: 0;">
+                <span style="color: #0284c7; font-weight: 900;">01. 依治療目的辨認ICU藥物</span>
+                <span class="sub-tag" style="font-size: 16px; padding: 5px 14px; background: #e0f2fe; color: #0284c7; border: 1.5px solid #7dd3fc;">分類與定位</span>
               </div>
-              <p style="color: #cbd5e1; font-size: 18.5px;">
-                能夠依臨床休克與器官灌流目標，清楚區分<strong>升壓劑 (Vasopressor)</strong> 與 <strong>強心劑 (Inotrope)</strong>，並熟知常見降壓、鎮靜、止痛、抗凝血與抗生素之主要適應症與藥物特性。
+              <p style="color: #1e293b; font-size: 25px; line-height: 1.85; margin: 0;">
+                能夠依臨床休克與器官灌流目標，清楚區分 <strong>升壓劑 (Vasopressor)</strong> 與 <strong>強心劑 (Inotrope)</strong>，並熟知常見降壓、鎮靜、止痛、抗凝血與抗生素之主要適應症與藥物特性。
               </p>
             </div>
 
-            <div class="card highlight-cyan">
-              <div class="card-title">
-                <span>02. 掌握高風險藥物床邊監測</span>
-                <span class="sub-tag">床邊指標</span>
+            <div class="card highlight-cyan" style="padding: 32px 36px; display: flex; flex-direction: column; justify-content: flex-start; gap: 18px;">
+              <div class="card-title" style="font-size: 28px; margin-bottom: 0;">
+                <span style="color: #0f766e; font-weight: 900;">02. 掌握高風險藥物床邊監測</span>
+                <span class="sub-tag" style="font-size: 16px; padding: 5px 14px; background: #ccfbf1; color: #0f766e; border: 1.5px solid #5eead4;">床邊指標</span>
               </div>
-              <p style="color: #cbd5e1; font-size: 18.5px;">
-                精確說出各類高風險重症藥物給藥後的<strong>核心監測生理指標</strong>（MAP、乳酸、肢體末梢、尿量、RASS評分、ECG與電解質），掌握器官實質灌流而非僅盯數字。
+              <p style="color: #1e293b; font-size: 25px; line-height: 1.85; margin: 0;">
+                精確說出各類高風險重症藥物給藥後的 <strong>核心監測生理指標</strong>（MAP、乳酸、肢體末梢、尿量、RASS評分、ECG與電解質），掌握器官實質灌流而非僅盯數字。
               </p>
             </div>
 
-            <div class="card highlight-red">
-              <div class="card-title">
-                <span>03. 敏銳辨識致命不良反應</span>
-                <span class="sub-tag">警訊識別</span>
+            <div class="card highlight-red" style="padding: 32px 36px; display: flex; flex-direction: column; justify-content: flex-start; gap: 18px;">
+              <div class="card-title" style="font-size: 28px; margin-bottom: 0;">
+                <span style="color: #dc2626; font-weight: 900;">03. 敏銳辨識致命不良反應</span>
+                <span class="sub-tag" style="font-size: 16px; padding: 5px 14px; background: #fee2e2; color: #991b1b; border: 1.5px solid #fca5a5;">警訊識別</span>
               </div>
-              <p style="color: #cbd5e1; font-size: 18.5px;">
-                即時辨識<strong>凝血異常（HIT、出血）</strong>、<strong>QTc 延長與 TdP 風暴</strong>、<strong>PRIS</strong>、<strong>血清素症候群</strong>及<strong>嚴重皮膚黏膜與過敏反應（DRESS/SJS）</strong>。
+              <p style="color: #1e293b; font-size: 25px; line-height: 1.85; margin: 0;">
+                即時辨識 <strong>凝血異常（HIT、嚴重出血）</strong>、<strong>QTc 延長與 TdP 風暴</strong>、<strong>PRIS 輸注症候群</strong>、<strong>血清素症候群</strong> 及 <strong>嚴重皮膚黏膜過敏反應（DRESS/SJS）</strong>。
               </p>
             </div>
 
-            <div class="card highlight-amber">
-              <div class="card-title">
-                <span>04. 執行緊急處置與通報SOP</span>
-                <span class="sub-tag">臨床處置</span>
+            <div class="card highlight-amber" style="padding: 32px 36px; display: flex; flex-direction: column; justify-content: flex-start; gap: 18px;">
+              <div class="card-title" style="font-size: 28px; margin-bottom: 0;">
+                <span style="color: #b45309; font-weight: 900;">04. 執行緊急處置與通報SOP</span>
+                <span class="sub-tag" style="font-size: 16px; padding: 5px 14px; background: #fef3c7; color: #92400e; border: 1.5px solid #fcd34d;">臨床處置</span>
               </div>
-              <p style="color: #cbd5e1; font-size: 18.5px;">
-                於床邊發現異常生理徵兆時，能迅速完成<strong>暫停評估、管路確認、對照目前用藥、啟動急救/解毒措施並立即通報醫師</strong>，阻斷嚴重藥害事件發生。
+              <p style="color: #1e293b; font-size: 25px; line-height: 1.85; margin: 0;">
+                於床邊發現異常生理微兆時，能迅速完成 <strong>暫停評估、管路確認、對照目前用藥、啟動急救／解毒措施並立即通報醫師</strong>，阻斷嚴重藥害事件發生。
               </p>
             </div>
           </div>
