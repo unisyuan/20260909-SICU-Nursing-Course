@@ -1147,10 +1147,10 @@ def build_presentation():
             </div>
           </div>
 
-          <div class="alert-banner red" style="margin-top: 4px;">
+          <div class="alert-banner red" style="margin-top: 4px; font-size: 18.5px; padding: 12px 20px; align-items: center; white-space: nowrap;">
             <span class="icon">🚨</span>
-            <div>
-              <strong>核心警示：</strong>Benzodiazepine 與鴉片類止痛藥併用，會加劇呼吸抑制與血壓過低；給藥床邊應確認備妥甦醒急救設備與解毒拮抗劑（Naloxone / Flumazenil）。
+            <div style="white-space: nowrap;">
+              <strong>核心警示：</strong>Benzodiazepine 與鴉片類止痛藥併用，會加劇呼吸抑制與血壓過低；給藥床邊應確認備妥甦醒急救設備與解毒拮抗劑（Flumazenil / Naloxone）。
             </div>
           </div>
         </div>
@@ -1386,36 +1386,36 @@ def build_presentation():
         <div class="slide-body">
           <div class="card-grid grid-2">
             <div class="card highlight-cyan">
-              <div class="card-title">
+              <div class="card-title" style="font-size: 25px;">
                 <span>Fentanyl</span>
                 <span class="sub-tag">脂溶性短效</span>
               </div>
-              <ul class="bullet-list" style="font-size: 13.5px;">
-                <li>• 起效快（1–2 分鐘）。</li>
-                <li>• <strong>組織胺釋放較少</strong>，對血流動力學相對穩定。</li>
-                <li>• <strong>無具臨床重要性的活性腎排代謝物</strong>（腎功能不全首選）。</li>
-                <li>• <strong>高劑量或快速給藥可能出現胸壁僵硬（Chest Wall Rigidity）</strong>。</li>
+              <ul class="bullet-list" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; margin-top: 14px;">
+                <li style="font-size: 22.5px; line-height: 1.55;">起效快（1–2 分鐘）。</li>
+                <li style="font-size: 22.5px; line-height: 1.45;"><strong>組織胺釋放較少</strong>，對血流動力學相對穩定。</li>
+                <li style="font-size: 22.5px; line-height: 1.45;"><strong>無具臨床重要性的活性腎排代謝物</strong>（腎功能不全首選）。</li>
+                <li style="font-size: 22.5px; line-height: 1.45;"><strong>高劑量或快速給藥可能出現胸壁僵硬（Chest Wall Rigidity）</strong>。</li>
               </ul>
             </div>
 
             <div class="card highlight-amber">
-              <div class="card-title">
+              <div class="card-title" style="font-size: 25px;">
                 <span>Morphine</span>
                 <span class="sub-tag">水溶性長效</span>
               </div>
-              <ul class="bullet-list amber" style="font-size: 13.5px;">
-                <li>• 可能因<strong>組織胺釋放造成血管擴張與血壓下降</strong>。</li>
-                <li>• <strong>活性代謝物（M6G）可能於腎功能不全時嚴重蓄積</strong>。</li>
-                <li>• <strong>注意延遲性鎮靜與進行性呼吸抑制</strong>。</li>
+              <ul class="bullet-list amber" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; margin-top: 14px;">
+                <li style="font-size: 22.5px; line-height: 1.55;">可能因<strong>組織胺釋放造成血管擴張與血壓下降</strong>。</li>
+                <li style="font-size: 22.5px; line-height: 1.55;"><strong>活性代謝物（M6G）可能於腎功能不全時嚴重蓄積</strong>。</li>
+                <li style="font-size: 22.5px; line-height: 1.55;"><strong>注意延遲性鎮靜與進行性呼吸抑制</strong>。</li>
               </ul>
             </div>
           </div>
 
-          <div class="card highlight-blue" style="padding: 10px 16px; margin-top: 4px;">
-            <div style="font-size: 13px; font-weight: 700; color: var(--accent-blue); margin-bottom: 4px;">
+          <div class="card highlight-blue" style="padding: 12px 20px; margin-top: 8px;">
+            <div style="font-size: 22px; font-weight: 800; color: #0284c7; margin-bottom: 6px;">
               共同監測項目：
             </div>
-            <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; font-size: 12.5px;">
+            <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; font-size: 22px; font-weight: 600; color: #0f172a; white-space: nowrap;">
               <div>① 疼痛評分</div>
               <div>② 呼吸速率與深度</div>
               <div>③ 意識與鎮靜程度</div>
@@ -2106,7 +2106,7 @@ def build_presentation():
                 <li>• <strong>Heparin：</strong>HIT 免疫性血栓消費。</li>
                 <li>• <strong>Linezolid：</strong>骨髓抑制。</li>
                 <li>• <strong>Vancomycin：</strong>少見免疫性血小板低下。</li>
-                <li>• <strong>部分 β-lactam 抗生素</strong>。</li>
+                <li>• <strong>部分 β-lactam 抗生素</strong>（如 Piperacillin、Ceftriaxone）。</li>
               </ul>
             </div>
 

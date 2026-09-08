@@ -437,7 +437,7 @@ slides_data = [
         "title": "Slide 36｜哪些藥物會造成凝血異常？",
         "tag": "PART 5｜看到異常，要想到可能是藥物",
         "body": [
-            "• 血小板下降：Heparin(HIT)、Linezolid(骨髓抑制)、Vancomycin(免疫性低下)、部分β-lactam。",
+            "• 血小板下降：Heparin(HIT)、Linezolid(骨髓抑制)、Vancomycin(免疫性低下)、部分β-lactam(如 Piperacillin、Ceftriaxone)。",
             "• PT／INR 延長：Cefoperazone、Warfarin、維生素K不足(NPO)、嚴重肝功能異常。",
             "• 直接增加出血：Heparin、Enoxaparin、Urokinase、多種抗血小板/抗凝血藥物併用。",
             "【Cefoperazone 高風險情境】營養不良、維生素K攝取不足、膽道或肝病、長時間抗生素、重症狀態、併用抗凝劑。",
