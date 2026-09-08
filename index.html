@@ -3063,89 +3063,111 @@
 
         <div class="slide-body">
           <div class="card-grid grid-3" style="flex: 1; margin-bottom: 6px;">
-            <div class="card highlight-red" style="grid-column: span 2; padding: 20px 24px;">
-              <div class="card-title" style="font-size: 25px;">
+            <div class="card highlight-red" style="grid-column: span 2; padding: 20px 24px; display: flex; flex-direction: column;">
+              <div class="card-title" style="font-size: 25px; margin-bottom: 8px;">
                 <span style="color: #dc2626; font-size: 25px;">明確延長 QT／TdP 風險藥物</span>
                 <span class="sub-tag" style="background: #fee2e2; color: #991b1b; border: 1.5px solid #fca5a5; font-size: 14.5px;">直接延長心電圖</span>
               </div>
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 8px;">
-                <div style="display: flex; flex-direction: column; gap: 14px;">
-                  <div>
-                    <div style="color: #0f766e; font-size: 22px; font-weight: 800; margin-bottom: 4px; border-bottom: 1.5px solid rgba(15, 118, 110, 0.2); padding-bottom: 2px;">
-                      抗心律不整藥：
-                    </div>
-                    <ul class="bullet-list blue" style="font-size: 19px; line-height: 1.45; margin-top: 4px; padding-left: 0;">
-                      <li><span style="font-size: 17.5px; color: #334155;">Amiodarone</span></li>
-                    </ul>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, 1fr); gap: 16px 28px; flex: 1; margin-top: 8px;">
+                <!-- Row 1: 左 (Macrolides) / 右 (抗心律不整) -->
+                <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+                  <div style="color: #0f766e; font-size: 22px; font-weight: 800; border-bottom: 2px solid rgba(15, 118, 110, 0.25); padding-bottom: 4px; margin-bottom: 8px;">
+                    抗感染 — Macrolides：
                   </div>
-                  
-                  <div>
-                    <div style="color: #0f766e; font-size: 22px; font-weight: 800; margin-bottom: 4px; border-bottom: 1.5px solid rgba(15, 118, 110, 0.2); padding-bottom: 2px;">
-                      抗感染藥物：
-                    </div>
-                    <ul class="bullet-list blue" style="font-size: 19px; line-height: 1.45; gap: 8px; margin-top: 4px; padding-left: 0;">
-                      <li>
-                        <strong>Macrolides：</strong><br>
-                        <span style="font-size: 17.5px; color: #475569;">Azithromycin, Erythromycin, Clarithromycin</span>
-                      </li>
-                      <li>
-                        <strong>Fluoroquinolones：</strong><br>
-                        <span style="font-size: 17.5px; color: #475569;">Levofloxacin, Moxifloxacin, Ciprofloxacin</span>
-                      </li>
-                      <li>
-                        <strong>Azole 類抗黴菌藥：</strong><br>
-                        <span style="font-size: 17.5px; color: #475569;">Fluconazole, Voriconazole, Posaconazole</span>
-                      </li>
-                    </ul>
-                  </div>
+                  <ul class="bullet-list blue" style="font-size: 21px; line-height: 1.5; margin: 0; padding-left: 0;">
+                    <li style="font-size: 21px; color: #1e293b; font-weight: 600;">
+                      Azithromycin, Erythromycin, Clarithromycin
+                    </li>
+                  </ul>
                 </div>
 
-                <div style="display: flex; flex-direction: column; gap: 14px;">
-                  <div>
-                    <div style="color: #0f766e; font-size: 22px; font-weight: 800; margin-bottom: 4px; border-bottom: 1.5px solid rgba(15, 118, 110, 0.2); padding-bottom: 2px;">
-                      止吐與腸胃用藥：
-                    </div>
-                    <ul class="bullet-list blue" style="font-size: 19px; line-height: 1.45; margin-top: 4px; padding-left: 0;">
-                      <li>
-                        <span style="font-size: 17.5px; color: #334155;">Ondansetron、Droperidol、Metoclopramide</span>
-                      </li>
-                    </ul>
+                <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+                  <div style="color: #0f766e; font-size: 22px; font-weight: 800; border-bottom: 2px solid rgba(15, 118, 110, 0.25); padding-bottom: 4px; margin-bottom: 8px;">
+                    抗心律不整藥：
                   </div>
-                  
-                  <div>
-                    <div style="color: #0f766e; font-size: 22px; font-weight: 800; margin-bottom: 4px; border-bottom: 1.5px solid rgba(15, 118, 110, 0.2); padding-bottom: 2px;">
-                      精神科與止痛鎮靜：
-                    </div>
-                    <ul class="bullet-list blue" style="font-size: 19px; line-height: 1.45; margin-top: 4px; padding-left: 0;">
-                      <li>
-                        <span style="font-size: 17.5px; color: #334155;">Haloperidol、Ziprasidone、Quetiapine</span>
-                      </li>
-                    </ul>
+                  <ul class="bullet-list blue" style="font-size: 21px; line-height: 1.5; margin: 0; padding-left: 0;">
+                    <li style="font-size: 21px; color: #1e293b; font-weight: 700;">
+                      Amiodarone
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Row 2: 左 (Fluoroquinolones) / 右 (止吐與腸胃) -->
+                <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+                  <div style="color: #0f766e; font-size: 22px; font-weight: 800; border-bottom: 2px solid rgba(15, 118, 110, 0.25); padding-bottom: 4px; margin-bottom: 8px;">
+                    抗感染 — Fluoroquinolones：
                   </div>
+                  <ul class="bullet-list blue" style="font-size: 21px; line-height: 1.5; margin: 0; padding-left: 0;">
+                    <li style="font-size: 21px; color: #1e293b; font-weight: 600;">
+                      Levofloxacin, Moxifloxacin, Ciprofloxacin
+                    </li>
+                  </ul>
+                </div>
+
+                <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+                  <div style="color: #0f766e; font-size: 22px; font-weight: 800; border-bottom: 2px solid rgba(15, 118, 110, 0.25); padding-bottom: 4px; margin-bottom: 8px;">
+                    止吐與腸胃用藥：
+                  </div>
+                  <ul class="bullet-list blue" style="font-size: 21px; line-height: 1.5; margin: 0; padding-left: 0;">
+                    <li style="font-size: 21px; color: #1e293b; font-weight: 600;">
+                      Ondansetron、Droperidol、Metoclopramide
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Row 3: 左 (Azole) / 右 (精神科與止痛鎮靜) -->
+                <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+                  <div style="color: #0f766e; font-size: 22px; font-weight: 800; border-bottom: 2px solid rgba(15, 118, 110, 0.25); padding-bottom: 4px; margin-bottom: 8px;">
+                    抗感染 — Azole 類抗黴菌藥：
+                  </div>
+                  <ul class="bullet-list blue" style="font-size: 21px; line-height: 1.5; margin: 0; padding-left: 0;">
+                    <li style="font-size: 21px; color: #1e293b; font-weight: 600;">
+                      Fluconazole, Voriconazole, Posaconazole
+                    </li>
+                  </ul>
+                </div>
+
+                <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+                  <div style="color: #0f766e; font-size: 22px; font-weight: 800; border-bottom: 2px solid rgba(15, 118, 110, 0.25); padding-bottom: 4px; margin-bottom: 8px;">
+                    精神科與止痛鎮靜：
+                  </div>
+                  <ul class="bullet-list blue" style="font-size: 21px; line-height: 1.5; margin: 0; padding-left: 0;">
+                    <li style="font-size: 21px; color: #1e293b; font-weight: 600;">
+                      Haloperidol、Ziprasidone、Quetiapine
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-            <div class="card highlight-amber" style="padding: 20px 22px;">
-              <div class="card-title" style="font-size: 25px;">
+            <div class="card highlight-amber" style="padding: 20px 22px; display: flex; flex-direction: column;">
+              <div class="card-title" style="font-size: 25px; margin-bottom: 8px;">
                 <span style="color: #b45309; font-size: 25px;">間接風險與重要例外</span>
                 <span class="sub-tag" style="background: #fef3c7; color: #92400e; border: 1.5px solid #fcd34d; font-size: 14.5px;">機制鑑別</span>
               </div>
-              <div style="font-size: 20px; margin-top: 4px;">
-                <p style="color: #92400e; font-weight: 800; font-size: 20.5px; margin-bottom: 4px;">間接增加 TdP 風險（電解質流失）：</p>
-                <p style="color: #1e293b; line-height: 1.55; margin-bottom: 8px;">
-                  • <strong>Loop 利尿劑</strong>（Furosemide）<br>
-                  • <strong>Thiazide 類利尿劑</strong><br>
-                  • <strong>Amphotericin B</strong>
-                </p>
-                <p style="color: #854d0e; font-size: 18.5px; margin-bottom: 12px; background: #fffbeb; padding: 6px 10px; border-radius: 6px; border: 1px solid #fde68a; line-height: 1.45;">
-                  💡 <strong>機轉：</strong>誘發低血鉀或低血鎂，大幅加劇心律不整風暴！
-                </p>
-                <div style="background: #e0f2fe; border: 1.5px solid #7dd3fc; padding: 8px 12px; border-radius: 8px;">
-                  <strong style="color: #0369a1; font-size: 20px;">⭐ 重要例外：Isavuconazole</strong>
-                  <p style="color: #0c4a6e; font-size: 19px; margin-top: 2px; line-height: 1.45;">
-                    唯一會<strong>縮短 QT</strong> 的 Azole，短 QT 症候群患者禁用。
-                  </p>
+              <div style="display: flex; flex-direction: column; justify-content: space-between; flex: 1; margin-top: 6px;">
+                <div>
+                  <div style="color: #92400e; font-weight: 800; font-size: 22px; margin-bottom: 8px;">
+                    間接增加 TdP 風險（電解質流失）：
+                  </div>
+                  <ul class="bullet-list amber" style="font-size: 21.5px; line-height: 1.6; gap: 8px; padding-left: 0; margin-top: 0; margin-bottom: 0;">
+                    <li><strong>Loop 利尿劑</strong>（Furosemide）</li>
+                    <li><strong>Thiazide 類利尿劑</strong></li>
+                    <li><strong>Amphotericin B</strong></li>
+                  </ul>
+                </div>
+
+                <div style="color: #854d0e; font-size: 20.5px; font-weight: 600; background: #fffbeb; padding: 14px 18px; border-radius: 8px; border: 1.5px solid #fde68a; line-height: 1.5;">
+                  💡 <strong>關鍵機轉：</strong>誘發低血鉀或低血鎂，大幅加劇心律不整風暴！
+                </div>
+
+                <div style="background: #e0f2fe; border: 2px solid #7dd3fc; padding: 16px 20px; border-radius: 10px;">
+                  <div style="color: #0369a1; font-size: 22px; font-weight: 800; margin-bottom: 4px;">
+                    ⭐ 重要例外：Isavuconazole
+                  </div>
+                  <div style="color: #0c4a6e; font-size: 20.5px; font-weight: 600; line-height: 1.5;">
+                    唯一會<strong>縮短 QT</strong> 的 Azole 類抗黴菌藥，短 QT 症候群患者禁用。
+                  </div>
                 </div>
               </div>
             </div>
